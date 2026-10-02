@@ -7,43 +7,48 @@ Revenue = quantity × unit price × (1 − discount / 100), for Completed orders
 
 1. **Southeast led regional revenue**, with $55,904.95 (70.8% of total completed revenue) from 94 completed orders.
 2. **Lumen Desk Lamp was the top product by revenue**, generating $36,765.74 (46.6% of total) from 32 completed orders.
-**Sensitivity check:** excluding quantities below 1 or above 100, **Northeast** leads regional revenue ($9,248.82) and **Pulse Smartwatch** leads product revenue ($10,556.95). Treat the all-row leaders above as provisional until the flagged quantities are verified.
+**Sensitivity check:** excluding orders above 10 units, **Northeast** leads regional revenue ($9,248.82) and **Pulse Smartwatch** leads product revenue ($10,556.95).
 3. **Zephyr Headphones had the highest product return rate among products with at least five completed/returned orders**: 33.3% (23 returned of 69 completed or returned orders). Use this as a review signal, especially where the denominator is small.
 
-## Regional results
+## Regional summary
 
-| Region | Orders | Completed | Returned | Revenue | Revenue share | Return rate* |
-|---|---:|---:|---:|---:|---:|---:|
-| Southeast | 118 | 94 | 9 | $55,904.95 | 70.8% | 8.7% (103 orders) |
-| Northeast | 110 | 90 | 9 | $9,248.82 | 11.7% | 9.1% (99 orders) |
-| West | 108 | 84 | 9 | $8,017.29 | 10.2% | 9.7% (93 orders) |
-| Midwest | 84 | 63 | 11 | $5,812.84 | 7.4% | 14.9% (74 orders) |
+| Region | Orders incl. >10 | Completed incl. >10 | Revenue incl. >10 | Share incl. >10 | Orders excl. >10 | Completed excl. >10 | Revenue excl. >10 | Share excl. >10 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Southeast | 118 | 94 | $55,904.95 | 70.8% | 116 | 92 | $8,204.19 | 26.2% |
+| Northeast | 109 | 89 | $9,248.82 | 11.7% | 109 | 89 | $9,248.82 | 29.6% |
+| West | 108 | 84 | $8,017.29 | 10.2% | 108 | 84 | $8,017.29 | 25.6% |
+| Midwest | 84 | 63 | $5,812.84 | 7.4% | 84 | 63 | $5,812.84 | 18.6% |
 
-## Product results (top 5 by completed revenue)
+## Product summary
 
-| Product | Orders | Completed | Returned | Revenue | Revenue share | Return rate* |
-|---|---:|---:|---:|---:|---:|---:|
-| Lumen Desk Lamp | 39 | 32 | 4 | $36,765.74 | 46.6% | 11.1% (36 orders) |
-| Laptop Sleeve | 49 | 41 | 1 | $14,833.05 | 18.8% | 2.4% (42 orders) |
-| Pulse Smartwatch | 38 | 31 | 0 | $10,556.95 | 13.4% | 0.0% (31 orders) |
-| Zephyr Headphones | 78 | 46 | 23 | $6,033.83 | 7.6% | 33.3% (69 orders) |
-| Brewmaster Coffee Maker | 46 | 38 | 4 | $4,487.20 | 5.7% | 9.5% (42 orders) |
+| Product | Orders incl. >10 | Completed incl. >10 | Revenue incl. >10 | Share incl. >10 | Orders excl. >10 | Completed excl. >10 | Revenue excl. >10 | Share excl. >10 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Lumen Desk Lamp | 39 | 32 | $36,765.74 | 46.6% | 38 | 31 | $1,810.73 | 5.8% |
+| Laptop Sleeve | 49 | 41 | $14,833.05 | 18.8% | 48 | 40 | $2,087.30 | 6.7% |
+| Pulse Smartwatch | 38 | 31 | $10,556.95 | 13.4% | 38 | 31 | $10,556.95 | 33.8% |
+| Zephyr Headphones | 78 | 46 | $6,033.83 | 7.6% | 78 | 46 | $6,033.83 | 19.3% |
+| Brewmaster Coffee Maker | 45 | 37 | $4,487.20 | 5.7% | 45 | 37 | $4,487.20 | 14.3% |
+| Nova Webcam | 33 | 27 | $2,975.00 | 3.8% | 33 | 27 | $2,975.00 | 9.5% |
+| FlexBand Set | 41 | 37 | $1,234.51 | 1.6% | 41 | 37 | $1,234.51 | 4.0% |
+| Trail Water Bottle | 45 | 38 | $1,120.28 | 1.4% | 45 | 38 | $1,120.28 | 3.6% |
+| USB-C Cable 3-pack | 51 | 41 | $977.35 | 1.2% | 51 | 41 | $977.35 | 3.1% |
 
-*Return rate = Returned / (Completed + Returned); Cancelled orders are excluded. Revenue includes only Completed rows with parseable quantity, unit price, and discount.*
+Orders with negative quantities are excluded from all summaries. `Incl. >10` includes orders with more than 10 units; `excl. >10` removes them. Revenue includes only Completed orders with parseable inputs. Return rate = Returned / (Completed + Returned); Cancelled orders are excluded.
 
 ## Recommendation
 
-First verify the unusual quantities behind $47,700.76 in completed revenue. The apparent leaders change when those records are excluded. If source records confirm them, prioritize **Southeast** and **Lumen Desk Lamp**; otherwise use the sensitivity results (Northeast region and Pulse Smartwatch product) to guide next-quarter planning. Review the high Zephyr Headphones return rate before increasing its promotion.
+Verify the >10-unit orders, which account for $47,700.76 in completed revenue. The all-order leaders are **Southeast** and **Lumen Desk Lamp**, while the leaders excluding >10-unit orders are **Northeast** and **Pulse Smartwatch**. Use both scenarios in planning until the quantities are confirmed. Review the high Zephyr Headphones return rate before increasing its promotion.
 
 ## Data cautions
 
 - 420 cleaned rows were read; 420 fall in H1 2025. 0 rows had dates that could not be parsed and were excluded from date-based analysis.
-- 20 H1 rows have no customer ID (16 are Completed). These rows were still included in regional/product, revenue, and return insights whenever the other required fields were present; missing customer IDs only prevent customer-level analysis and follow-up.
-- 23 Completed H1 orders lack parseable quantity, price, or discount and are excluded from revenue; 23 counted during revenue calculation.
-- 3 H1 rows have quantity below 1 or above 100. Their Completed rows contribute $47,700.76 (60.4%) to reported revenue; the two largest are 999 Lumen Desk Lamps in the Southeast and 500 Laptop Sleeves in the Southeast. Values were retained, so validate these records before acting on rankings.
-- There are 38 Returned orders and 22 Cancelled orders among 420 H1 rows. Overall return rate is 10.3% across 369 Completed or Returned orders.
+- 1 H1 row(s) have negative quantities and were excluded from all insight calculations: ORD-1101 (-3 units).
+- 2 H1 row(s) have quantities greater than 10 and are shown in both scenarios. Together, their Completed orders contribute $47,700.76 when included: ORD-1205 (999 × Lumen Desk Lamp, Southeast), ORD-1165 (500 × Laptop Sleeve, Southeast).
+- 20 H1 nonnegative-quantity rows have no customer ID (16 are Completed). These rows are included in regional/product, revenue, and return insights whenever the other required fields are present; missing customer IDs only prevent customer-level analysis and follow-up.
+- 22 Completed H1 orders lack parseable quantity, price, or discount and are excluded from revenue; 22 counted during revenue calculation.
+- There are 38 Returned orders and 22 Cancelled orders among 419 included H1 rows. Overall return rate is 10.3% across 368 Completed or Returned orders.
 - Duplicate order IDs were merged by the cleaning script. Blank fields were filled from duplicate rows; conflicts, if any, use the first row's value and are documented in the cleaning audit.
 
 ## Reproducible outputs
 
-This script also writes `brightcart_region_summary.csv` and `brightcart_product_summary.csv` beside this report.
+This script also writes `brightcart_region_summary.csv` and `brightcart_product_summary.csv`; each compares results with and without >10-unit orders.

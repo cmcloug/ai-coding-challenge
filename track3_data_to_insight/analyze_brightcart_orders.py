@@ -60,11 +60,20 @@ def main():
         if START <= day <= END:
             h1.append(row)
 
-    # Revenue follows the brief exactly. Missing or unparseable inputs exclude
-    # that completed order from the revenue sum and are counted for caution.
+    negative_rows = []
+    insight_rows = []
+    for row in h1:
+        qty = parse_decimal(row["quantity"])
+        if qty is not None and qty < 0:
+            negative_rows.append((row, qty))
+        else:
+            insight_rows.append(row)
+
+    # Negative quantities are excluded from all insight totals/rates. Revenue
+    # follows the brief; missing or unparseable inputs exclude only revenue.
     revenue_inputs_missing = 0
     revenue_by_row = {}
-    for idx, row in enumerate(h1):
+    for idx, row in enumerate(insight_rows):
         if row["status"] != "Completed":
             continue
         qty = parse_decimal(row["quantity"])
@@ -75,10 +84,13 @@ def main():
             continue
         revenue_by_row[idx] = qty * price * (Decimal("1") - discount / Decimal("100"))
 
-    def summarize(field):
+    def summarize(field, exclude_large=False):
         groups = defaultdict(lambda: {"orders": 0, "Completed": 0, "Returned": 0,
                                       "Cancelled": 0, "revenue": ZERO})
-        for idx, row in enumerate(h1):
+        for idx, row in enumerate(insight_rows):
+            qty = parse_decimal(row["quantity"])
+            if exclude_large and qty is not None and qty > 10:
+                continue
             key = row[field] or "(Missing)"
             group = groups[key]
             group["orders"] += 1
@@ -103,34 +115,49 @@ def main():
         return sorted(result, key=lambda r: (-r["_revenue"], r[field]))
 
     regions, products = summarize("region"), summarize("product")
+    regions_no_large, products_no_large = summarize("region", True), summarize("product", True)
     total_revenue = sum(revenue_by_row.values(), ZERO)
-    status_counts = Counter(row["status"] for row in h1)
+    status_counts = Counter(row["status"] for row in insight_rows)
     return_denominator = status_counts["Completed"] + status_counts["Returned"]
     overall_return_rate = (100 * status_counts["Returned"] / return_denominator) if return_denominator else 0
-    completed_missing_customer = sum(1 for row in h1 if row["status"] == "Completed" and not row["customer_id"])
-    missing_customers = sum(1 for row in h1 if not row["customer_id"])
-    missing_revenue_inputs = sum(1 for row in h1 if row["status"] == "Completed" and
+    completed_missing_customer = sum(1 for row in insight_rows if row["status"] == "Completed" and not row["customer_id"])
+    missing_customers = sum(1 for row in insight_rows if not row["customer_id"])
+    missing_revenue_inputs = sum(1 for row in insight_rows if row["status"] == "Completed" and
                                  (parse_decimal(row["quantity"]) is None or parse_decimal(row["unit_price"]) is None or
                                   parse_decimal(row["discount_pct"]) is None))
-    unusual_qty = [(row, parse_decimal(row["quantity"])) for row in h1]
-    unusual_qty = [(r, q) for r, q in unusual_qty if q is not None and (q < 1 or q > 100)]
-    outlier_indices = {idx for idx, row in enumerate(h1)
-                       if (q := parse_decimal(row["quantity"])) is not None and (q < 1 or q > 100)}
-    outlier_revenue = sum((value for idx, value in revenue_by_row.items() if idx in outlier_indices), ZERO)
-
-    def revenue_excluding_outliers(field):
-        totals = defaultdict(lambda: ZERO)
-        for idx, row in enumerate(h1):
-            if idx in revenue_by_row and idx not in outlier_indices:
-                totals[row[field] or "(Missing)"] += revenue_by_row[idx]
-        return sorted(totals.items(), key=lambda item: (-item[1], item[0]))
-
-    regions_without_outliers = revenue_excluding_outliers("region")
-    products_without_outliers = revenue_excluding_outliers("product")
+    large_rows = [(idx, row, parse_decimal(row["quantity"]))
+                  for idx, row in enumerate(insight_rows)
+                  if (parse_decimal(row["quantity"]) is not None and parse_decimal(row["quantity"]) > 10)]
+    large_revenue = sum((revenue_by_row[idx] for idx, _, _ in large_rows if idx in revenue_by_row), ZERO)
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    write_summary(output_dir / "brightcart_region_summary.csv", [{k:v for k,v in r.items() if not k.startswith("_")} for r in regions], "region")
-    write_summary(output_dir / "brightcart_product_summary.csv", [{k:v for k,v in r.items() if not k.startswith("_")} for r in products], "product")
+    def comparative_summary(rows_with, rows_without, key):
+        without = {r[key]: r for r in rows_without}
+        merged = []
+        for included in rows_with:
+            excluded = without.get(included[key], {"orders": 0, "completed_orders": 0,
+                "returned_orders": 0, "cancelled_orders": 0, "revenue_usd": "0.00",
+                "revenue_share_pct": "0.00", "return_rate_pct": "0.00"})
+            merged.append({
+                key: included[key], "orders_including_gt10": included["orders"],
+                "completed_including_gt10": included["completed_orders"],
+                "revenue_including_gt10_usd": included["revenue_usd"],
+                "share_including_gt10_pct": included["revenue_share_pct"],
+                "orders_excluding_gt10": excluded["orders"],
+                "completed_excluding_gt10": excluded["completed_orders"],
+                "revenue_excluding_gt10_usd": excluded["revenue_usd"],
+                "share_excluding_gt10_pct": excluded["revenue_share_pct"],
+            })
+        return merged
+
+    region_comparison = comparative_summary(regions, regions_no_large, "region")
+    product_comparison = comparative_summary(products, products_no_large, "product")
+    for filename, rows, key in (("brightcart_region_summary.csv", region_comparison, "region"),
+                                ("brightcart_product_summary.csv", product_comparison, "product")):
+        with (output_dir / filename).open("w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else [key])
+            writer.writeheader()
+            writer.writerows(rows)
 
     def table(rows, field, limit=None):
         shown = rows[:limit] if limit else rows
@@ -142,9 +169,22 @@ def main():
                          f"{pct(r['_return_rate'])} ({r['_eligible']} orders) |")
         return "\n".join(lines)
 
+    def comparison_table(rows_in, rows_out, field):
+        excluded = {r[field]: r for r in rows_out}
+        lines = [f"| {field.title()} | Orders incl. >10 | Completed incl. >10 | Revenue incl. >10 | Share incl. >10 | Orders excl. >10 | Completed excl. >10 | Revenue excl. >10 | Share excl. >10 |",
+                 "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
+        for inc in rows_in:
+            exc = excluded.get(inc[field])
+            if not exc:
+                continue
+            lines.append(f"| {inc[field]} | {inc['orders']} | {inc['completed_orders']} | {money(inc['_revenue'])} | "
+                         f"{pct(Decimal(inc['revenue_share_pct']))} | {exc['orders']} | {exc['completed_orders']} | "
+                         f"{money(exc['_revenue'])} | {pct(Decimal(exc['revenue_share_pct']))} |")
+        return "\n".join(lines)
+
     top_region = regions[0] if regions else None
     top_product = products[0] if products else None
-    highest_returns = max((r for r in products if r["_eligible"] >= 5),
+    highest_returns = max((r for r in products_no_large if r["_eligible"] >= 5),
                           key=lambda r: (r["_return_rate"], r["_eligible"]), default=None)
     report = ["# BrightCart H1 2025: Results and focus", "",
               f"Source: `{source.name}`. Analysis window: January 1–June 30, 2025.",
@@ -156,25 +196,24 @@ def main():
     if top_product:
         report.append(f"2. **{top_product['product']} was the top product by revenue**, generating {money(top_product['_revenue'])} "
                       f"({pct(Decimal(top_product['revenue_share_pct']))} of total) from {top_product['completed_orders']} completed orders.")
-    if regions_without_outliers and products_without_outliers:
-        report.append(f"**Sensitivity check:** excluding quantities below 1 or above 100, **{regions_without_outliers[0][0]}** leads regional revenue "
-                      f"({money(regions_without_outliers[0][1])}) and **{products_without_outliers[0][0]}** leads product revenue "
-                      f"({money(products_without_outliers[0][1])}). Treat the all-row leaders above as provisional until the flagged quantities are verified.")
+    if regions_no_large and products_no_large:
+        report.append(f"**Sensitivity check:** excluding orders above 10 units, **{regions_no_large[0]['region']}** leads regional revenue "
+                      f"({money(regions_no_large[0]['_revenue'])}) and **{products_no_large[0]['product']}** leads product revenue "
+                      f"({money(products_no_large[0]['_revenue'])}).")
     if highest_returns:
         report.append(f"3. **{highest_returns['product']} had the highest product return rate among products with at least five completed/returned orders**: "
                       f"{pct(highest_returns['_return_rate'])} ({highest_returns['returned_orders']} returned of {highest_returns['_eligible']} completed or returned orders). "
                       "Use this as a review signal, especially where the denominator is small.")
     else:
         report.append("3. No product had at least five completed/returned orders, so product return-rate comparisons are too thin to rank reliably.")
-    report += ["", "## Regional results", "", table(regions, "region"), "",
-               "## Product results (top 5 by completed revenue)", "", table(products, "product", 5), "",
-               "*Return rate = Returned / (Completed + Returned); Cancelled orders are excluded. Revenue includes only Completed rows with parseable quantity, unit price, and discount.*", "",
+    report += ["", "## Regional summary", "", comparison_table(regions, regions_no_large, "region"), "",
+               "## Product summary", "", comparison_table(products, products_no_large, "product"), "",
+               "Orders with negative quantities are excluded from all summaries. `Incl. >10` includes orders with more than 10 units; `excl. >10` removes them. Revenue includes only Completed orders with parseable inputs. Return rate = Returned / (Completed + Returned); Cancelled orders are excluded.", "",
                "## Recommendation", ""]
     if top_region and top_product:
-        if regions_without_outliers and (regions_without_outliers[0][0] != top_region["region"] or
-                                         products_without_outliers[0][0] != top_product["product"]):
-            report.append(f"First verify the unusual quantities behind {money(outlier_revenue)} in completed revenue. The apparent leaders change when those records are excluded. "
-                          f"If source records confirm them, prioritize **{top_region['region']}** and **{top_product['product']}**; otherwise use the sensitivity results ({regions_without_outliers[0][0]} region and {products_without_outliers[0][0]} product) to guide next-quarter planning. Review the high Zephyr Headphones return rate before increasing its promotion.")
+        if regions_no_large and (regions_no_large[0]["region"] != top_region["region"] or
+                                 products_no_large[0]["product"] != top_product["product"]):
+            report.append(f"Verify the >10-unit orders, which account for {money(large_revenue)} in completed revenue. The all-order leaders are **{top_region['region']}** and **{top_product['product']}**, while the leaders excluding >10-unit orders are **{regions_no_large[0]['region']}** and **{products_no_large[0]['product']}**. Use both scenarios in planning until the quantities are confirmed. Review the high Zephyr Headphones return rate before increasing its promotion.")
         else:
             report.append(f"Prioritize inventory and campaign review for **{top_region['region']}**, led by **{top_product['product']}** nationally. "
                           "Before expanding spend, verify unusual quantities, check return rates, and confirm inventory availability.")
@@ -182,16 +221,17 @@ def main():
         report.append("Review the regional and product summaries before setting next-quarter priorities; the source does not provide enough valid H1 revenue data for a supported ranking.")
     report += ["", "## Data cautions", "",
                f"- {len(all_rows)} cleaned rows were read; {len(h1)} fall in H1 2025. {invalid_dates} rows had dates that could not be parsed and were excluded from date-based analysis.",
-               f"- {missing_customers} H1 rows have no customer ID ({completed_missing_customer} are Completed). These rows were still included in regional/product, revenue, and return insights whenever the other required fields were present; missing customer IDs only prevent customer-level analysis and follow-up.",
+               f"- {len(negative_rows)} H1 row(s) have negative quantities and were excluded from all insight calculations: " + (", ".join(f"{r['order_id']} ({q} units)" for r, q in negative_rows) or "none") + ".",
+               f"- {len(large_rows)} H1 row(s) have quantities greater than 10 and are shown in both scenarios. Together, their Completed orders contribute {money(large_revenue)} when included: " + (", ".join(f"{r['order_id']} ({q} × {r['product']}, {r['region']})" for _, r, q in large_rows) or "none") + ".",
+               f"- {missing_customers} H1 nonnegative-quantity rows have no customer ID ({completed_missing_customer} are Completed). These rows are included in regional/product, revenue, and return insights whenever the other required fields are present; missing customer IDs only prevent customer-level analysis and follow-up.",
                f"- {missing_revenue_inputs} Completed H1 orders lack parseable quantity, price, or discount and are excluded from revenue; {revenue_inputs_missing} counted during revenue calculation.",
-               f"- {len(unusual_qty)} H1 rows have quantity below 1 or above 100. Their Completed rows contribute {money(outlier_revenue)} ({pct(100 * outlier_revenue / total_revenue if total_revenue else ZERO)}) to reported revenue; the two largest are 999 Lumen Desk Lamps in the Southeast and 500 Laptop Sleeves in the Southeast. Values were retained, so validate these records before acting on rankings.",
-               f"- There are {status_counts['Returned']} Returned orders and {status_counts['Cancelled']} Cancelled orders among {len(h1)} H1 rows. Overall return rate is {pct(overall_return_rate)} across {return_denominator} Completed or Returned orders.",
+               f"- There are {status_counts['Returned']} Returned orders and {status_counts['Cancelled']} Cancelled orders among {len(insight_rows)} included H1 rows. Overall return rate is {pct(overall_return_rate)} across {return_denominator} Completed or Returned orders.",
                "- Duplicate order IDs were merged by the cleaning script. Blank fields were filled from duplicate rows; conflicts, if any, use the first row's value and are documented in the cleaning audit.",
                "", "## Reproducible outputs", "",
-               "This script also writes `brightcart_region_summary.csv` and `brightcart_product_summary.csv` beside this report.", ""]
+               "This script also writes `brightcart_region_summary.csv` and `brightcart_product_summary.csv`; each compares results with and without >10-unit orders.", ""]
     report_path = output_dir / "brightcart_findings.md"
     report_path.write_text("\n".join(report), encoding="utf-8")
-    print(f"H1 rows: {len(h1)}; completed revenue: {money(total_revenue)}")
+    print(f"H1 rows: {len(h1)}; negative quantities excluded: {len(negative_rows)}; completed revenue including >10-unit orders: {money(total_revenue)}")
     print(f"Report: {report_path}")
     print(f"Region table: {output_dir / 'brightcart_region_summary.csv'}")
     print(f"Product table: {output_dir / 'brightcart_product_summary.csv'}")
