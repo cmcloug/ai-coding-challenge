@@ -70,4 +70,4 @@ hand it in that way. Fighting with git is not what we are testing.
 ## Please keep this private
 
 Do not make your repo public, post the materials elsewhere, or share your solutions
-with others. The same challenge may be used again.
+with others.
