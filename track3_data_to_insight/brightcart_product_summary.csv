@@ -1,0 +1,10 @@
+product,orders,completed_orders,returned_orders,cancelled_orders,revenue_usd,revenue_share_pct,return_rate_pct
+Lumen Desk Lamp,39,32,4,2,36765.74,46.55,11.11
+Laptop Sleeve,49,41,1,2,14833.05,18.78,2.38
+Pulse Smartwatch,38,31,0,2,10556.95,13.37,0.00
+Zephyr Headphones,78,46,23,5,6033.83,7.64,33.33
+Brewmaster Coffee Maker,46,38,4,3,4487.20,5.68,9.52
+Nova Webcam,33,27,2,1,2975.00,3.77,6.90
+FlexBand Set,41,37,0,3,1234.51,1.56,0.00
+Trail Water Bottle,45,38,2,0,1120.28,1.42,5.00
+USB-C Cable 3-pack,51,41,2,4,977.35,1.24,4.65
