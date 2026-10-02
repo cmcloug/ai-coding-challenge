@@ -1,0 +1,902 @@
+source_csv_row,order_id,field,original_value,cleaned_value,action_or_issue
+2,ORD-1044,unit_price,59.5,59.50,normalized formatting or known alias
+2,ORD-1044,status,Completed ,Completed,normalized formatting or known alias
+4,ORD-1297,sales_rep, Sam Okafor ,Sam Okafor,normalized formatting or known alias
+5,ORD-1186,order_date,05/14/2025,2025-05-14,normalized formatting or known alias
+5,ORD-1186,status,completed,Completed,normalized formatting or known alias
+6,ORD-1124,status,COMPLETED,Completed,normalized formatting or known alias
+7,ORD-1195,region,South East,Southeast,normalized formatting or known alias
+7,ORD-1195,discount_pct,10,1E+1,normalized formatting or known alias
+7,ORD-1195,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+8,ORD-1219,unit_price,$59.50,59.50,normalized formatting or known alias
+8,ORD-1219,sales_rep, Lee Watkins ,Lee Watkins,normalized formatting or known alias
+9,ORD-1058,region,NE,Northeast,normalized formatting or known alias
+9,ORD-1058,unit_price,59.5,59.50,normalized formatting or known alias
+9,ORD-1058,sales_rep, Priya Shah ,Priya Shah,normalized formatting or known alias
+10,ORD-1261,order_date,"Mar 6, 2025",2025-03-06,normalized formatting or known alias
+10,ORD-1261,region,midwest,Midwest,normalized formatting or known alias
+10,ORD-1261,status,COMPLETED,Completed,normalized formatting or known alias
+11,ORD-1383,order_date,03/10/2025,2025-03-10,normalized formatting or known alias
+11,ORD-1383,region,W,West,normalized formatting or known alias
+11,ORD-1383,unit_price,19.5,19.50,normalized formatting or known alias
+12,ORD-1329,status,COMPLETED,Completed,normalized formatting or known alias
+12,ORD-1329,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+13,ORD-1277,sales_rep, Sam Okafor ,Sam Okafor,normalized formatting or known alias
+14,ORD-1083,order_date,05/25/2025,2025-05-25,normalized formatting or known alias
+14,ORD-1083,region,NE,Northeast,normalized formatting or known alias
+14,ORD-1083,status,cancelled,Cancelled,normalized formatting or known alias
+15,ORD-1012,order_date,01/08/2025,2025-01-08,normalized formatting or known alias
+15,ORD-1012,region,NE,Northeast,normalized formatting or known alias
+16,ORD-1139,unit_price,$29.99,29.99,normalized formatting or known alias
+17,ORD-1253,unit_price,79.0,79.00,normalized formatting or known alias
+18,ORD-1079,unit_price,59.5,59.50,normalized formatting or known alias
+19,ORD-1345,region,W,West,normalized formatting or known alias
+19,ORD-1345,unit_price,19.5,19.50,normalized formatting or known alias
+19,ORD-1345,discount_pct,10,1E+1,normalized formatting or known alias
+19,ORD-1345,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+20,ORD-1174,region,southeast,Southeast,normalized formatting or known alias
+20,ORD-1174,discount_pct,10,1E+1,normalized formatting or known alias
+21,ORD-1309,order_date,06/11/2025,2025-06-11,normalized formatting or known alias
+21,ORD-1309,unit_price,19.5,19.50,normalized formatting or known alias
+22,ORD-1379,region,west,West,normalized formatting or known alias
+23,ORD-1125,unit_price,199.0,199.00,normalized formatting or known alias
+24,ORD-1257,product,FLEXBAND SET,FlexBand Set,normalized formatting or known alias
+25,ORD-1275,order_date,04/01/2025,2025-04-01,normalized formatting or known alias
+26,ORD-1397,product,FLEXBAND SET,FlexBand Set,normalized formatting or known alias
+27,ORD-1359,unit_price,199.0,199.00,normalized formatting or known alias
+28,ORD-1028,unit_price,$59.50,59.50,normalized formatting or known alias
+28,ORD-1028,discount_pct,10,1E+1,normalized formatting or known alias
+29,ORD-1182,unit_price,79.0,79.00,normalized formatting or known alias
+29,ORD-1182,status,COMPLETED,Completed,normalized formatting or known alias
+31,ORD-1216,order_date,06/23/2025,2025-06-23,normalized formatting or known alias
+31,ORD-1216,unit_price,$34.99,34.99,normalized formatting or known alias
+32,ORD-1355,order_date,"Feb 24, 2025",2025-02-24,normalized formatting or known alias
+32,ORD-1355,region,WEST,West,normalized formatting or known alias
+32,ORD-1355,unit_price,$79.00,79.00,normalized formatting or known alias
+33,ORD-1088,region,NORTHEAST,Northeast,normalized formatting or known alias
+33,ORD-1088,unit_price,$14.99,14.99,normalized formatting or known alias
+35,ORD-1097,unit_price,19.5,19.50,normalized formatting or known alias
+36,ORD-1091,sales_rep, Priya Shah ,Priya Shah,normalized formatting or known alias
+38,ORD-1199,order_date,"Jun 2, 2025",2025-06-02,normalized formatting or known alias
+38,ORD-1199,region,SOUTHEAST,Southeast,normalized formatting or known alias
+39,ORD-1390,discount_pct,10,1E+1,normalized formatting or known alias
+40,ORD-1350,order_date,"Feb 10, 2025",2025-02-10,normalized formatting or known alias
+40,ORD-1350,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+41,ORD-1370,region,WEST,West,normalized formatting or known alias
+42,ORD-1148,region,SOUTHEAST,Southeast,normalized formatting or known alias
+42,ORD-1148,unit_price,79.0,79.00,normalized formatting or known alias
+43,ORD-1224,region,South East,Southeast,normalized formatting or known alias
+43,ORD-1224,unit_price,199.0,199.00,normalized formatting or known alias
+44,ORD-1065,region,northeast,Northeast,normalized formatting or known alias
+44,ORD-1065,unit_price,79.0,79.00,normalized formatting or known alias
+45,ORD-1038,product,LAPTOP SLEEVE,Laptop Sleeve,normalized formatting or known alias
+46,ORD-1320,region,WEST,West,normalized formatting or known alias
+46,ORD-1320,unit_price,59.5,59.50,normalized formatting or known alias
+46,ORD-1320,status,COMPLETED,Completed,normalized formatting or known alias
+47,ORD-1229,region,MW,Midwest,normalized formatting or known alias
+47,ORD-1229,unit_price,79.0,79.00,normalized formatting or known alias
+47,ORD-1229,sales_rep, Jo Brennan ,Jo Brennan,normalized formatting or known alias
+48,ORD-1215,order_date,"Jun 2, 2025",2025-06-02,normalized formatting or known alias
+48,ORD-1215,region,SE,Southeast,normalized formatting or known alias
+48,ORD-1215,unit_price,79.0,79.00,normalized formatting or known alias
+49,ORD-1160,region,SOUTHEAST,Southeast,normalized formatting or known alias
+49,ORD-1160,unit_price,$14.99,14.99,normalized formatting or known alias
+51,ORD-1278,region,MIDWEST,Midwest,normalized formatting or known alias
+51,ORD-1278,unit_price,79.0,79.00,normalized formatting or known alias
+53,ORD-1013,order_date,01/09/2025,2025-01-09,normalized formatting or known alias
+53,ORD-1013,discount_pct,10,1E+1,normalized formatting or known alias
+54,ORD-1321,unit_price,59.5,59.50,normalized formatting or known alias
+54,ORD-1321,status,Completed ,Completed,normalized formatting or known alias
+55,ORD-1098,region,North East,Northeast,normalized formatting or known alias
+55,ORD-1098,status,COMPLETED,Completed,normalized formatting or known alias
+56,ORD-1152,order_date,04/07/2025,2025-04-07,normalized formatting or known alias
+56,ORD-1152,unit_price,19.5,19.50,normalized formatting or known alias
+56,ORD-1152,status,Completed ,Completed,normalized formatting or known alias
+56,ORD-1152,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+57,ORD-1405,order_date,05/21/2025,2025-05-21,normalized formatting or known alias
+57,ORD-1405,status,COMPLETED,Completed,normalized formatting or known alias
+57,ORD-1405,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+58,ORD-1135,order_date,03/29/2025,2025-03-29,normalized formatting or known alias
+58,ORD-1135,unit_price,199.0,199.00,normalized formatting or known alias
+59,ORD-1194,order_date,05/03/2025,2025-05-03,normalized formatting or known alias
+59,ORD-1194,region,South East,Southeast,normalized formatting or known alias
+60,ORD-1123,region,SOUTHEAST,Southeast,normalized formatting or known alias
+61,ORD-1263,order_date,"Mar 23, 2025",2025-03-23,normalized formatting or known alias
+61,ORD-1263,region,Mid-West,Midwest,normalized formatting or known alias
+61,ORD-1263,sales_rep, Sam Okafor ,Sam Okafor,normalized formatting or known alias
+62,ORD-1411,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+63,ORD-1086,order_date,05/06/2025,2025-05-06,normalized formatting or known alias
+63,ORD-1086,region,North East,Northeast,normalized formatting or known alias
+63,ORD-1086,status,Completed ,Completed,normalized formatting or known alias
+64,ORD-1271,order_date,"Mar 31, 2025",2025-03-31,normalized formatting or known alias
+64,ORD-1271,region,midwest,Midwest,normalized formatting or known alias
+64,ORD-1271,sales_rep, Jo Brennan ,Jo Brennan,normalized formatting or known alias
+65,ORD-1183,region,SE,Southeast,normalized formatting or known alias
+65,ORD-1183,discount_pct,10,1E+1,normalized formatting or known alias
+66,ORD-1162,region,southeast,Southeast,normalized formatting or known alias
+66,ORD-1162,unit_price,$29.99,29.99,normalized formatting or known alias
+67,ORD-1057,product,PULSE SMARTWATCH,Pulse Smartwatch,normalized formatting or known alias
+67,ORD-1057,unit_price,199.0,199.00,normalized formatting or known alias
+67,ORD-1057,status,Completed ,Completed,normalized formatting or known alias
+68,ORD-1173,discount_pct,10,1E+1,normalized formatting or known alias
+68,ORD-1173,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+69,ORD-1119,product,LUMEN DESK LAMP,Lumen Desk Lamp,normalized formatting or known alias
+69,ORD-1119,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+70,ORD-1004,region,northeast,Northeast,normalized formatting or known alias
+70,ORD-1004,unit_price,199.0,199.00,normalized formatting or known alias
+70,ORD-1004,sales_rep,MARCUS BELL,Marcus Bell,normalized formatting or known alias
+71,ORD-1052,order_date,03/09/2025,2025-03-09,normalized formatting or known alias
+71,ORD-1052,region,North East,Northeast,normalized formatting or known alias
+72,ORD-1369,unit_price,199.0,199.00,normalized formatting or known alias
+73,ORD-1417,region,W,West,normalized formatting or known alias
+73,ORD-1417,status,completed,Completed,normalized formatting or known alias
+74,ORD-1392,status,COMPLETED,Completed,normalized formatting or known alias
+74,ORD-1392,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+75,ORD-1346,order_date,02/05/2025,2025-02-05,normalized formatting or known alias
+75,ORD-1346,unit_price,59.5,59.50,normalized formatting or known alias
+76,ORD-1188,region,South East,Southeast,normalized formatting or known alias
+76,ORD-1188,status,completed,Completed,normalized formatting or known alias
+76,ORD-1188,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+77,ORD-1286,order_date,05/02/2025,2025-05-02,normalized formatting or known alias
+78,ORD-1374,order_date,03/11/2025,2025-03-11,normalized formatting or known alias
+78,ORD-1374,discount_pct,10,1E+1,normalized formatting or known alias
+79,ORD-1181,region,southeast,Southeast,normalized formatting or known alias
+79,ORD-1181,product,ZEPHYR HEADPHONES,Zephyr Headphones,normalized formatting or known alias
+80,ORD-1105,region,NORTHEAST,Northeast,normalized formatting or known alias
+81,ORD-1114,region,South East,Southeast,normalized formatting or known alias
+81,ORD-1114,unit_price,$14.99,14.99,normalized formatting or known alias
+82,ORD-1190,unit_price,$19.50,19.50,normalized formatting or known alias
+83,ORD-1041,order_date,"Mar 3, 2025",2025-03-03,normalized formatting or known alias
+83,ORD-1041,status,COMPLETED,Completed,normalized formatting or known alias
+84,ORD-1217,region,southeast,Southeast,normalized formatting or known alias
+84,ORD-1217,unit_price,79.0,79.00,normalized formatting or known alias
+85,ORD-1115,order_date,"Jan 4, 2025",2025-01-04,normalized formatting or known alias
+85,ORD-1115,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+86,ORD-1246,region,MIDWEST,Midwest,normalized formatting or known alias
+87,ORD-1159,order_date,"Apr 29, 2025",2025-04-29,normalized formatting or known alias
+87,ORD-1159,unit_price,199.0,199.00,normalized formatting or known alias
+87,ORD-1159,discount_pct,10,1E+1,normalized formatting or known alias
+88,ORD-1208,unit_price,59.5,59.50,normalized formatting or known alias
+88,ORD-1208,status,Completed ,Completed,normalized formatting or known alias
+89,ORD-1054,region,NORTHEAST,Northeast,normalized formatting or known alias
+89,ORD-1054,status,completed,Completed,normalized formatting or known alias
+90,ORD-1419,order_date,06/27/2025,2025-06-27,normalized formatting or known alias
+90,ORD-1419,region,west,West,normalized formatting or known alias
+90,ORD-1419,discount_pct,10,1E+1,normalized formatting or known alias
+90,ORD-1419,sales_rep,TARA NGUYEN,Tara Nguyen,normalized formatting or known alias
+91,ORD-1240,order_date,"Jan 20, 2025",2025-01-20,normalized formatting or known alias
+91,ORD-1240,unit_price,19.5,19.50,normalized formatting or known alias
+91,ORD-1240,discount_pct,10,1E+1,normalized formatting or known alias
+91,ORD-1240,status,completed,Completed,normalized formatting or known alias
+92,ORD-1188,region,South East,Southeast,normalized formatting or known alias
+92,ORD-1188,status,completed,Completed,normalized formatting or known alias
+92,ORD-1188,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+93,ORD-1385,region,W,West,normalized formatting or known alias
+93,ORD-1385,unit_price,$29.99,29.99,normalized formatting or known alias
+94,ORD-1020,discount_pct,10,1E+1,normalized formatting or known alias
+95,ORD-1050,unit_price,19.5,19.50,normalized formatting or known alias
+97,ORD-1413,status,completed,Completed,normalized formatting or known alias
+98,ORD-1268,region,MW,Midwest,normalized formatting or known alias
+98,ORD-1268,discount_pct,10,1E+1,normalized formatting or known alias
+98,ORD-1268,status,completed,Completed,normalized formatting or known alias
+100,ORD-1344,discount_pct,10,1E+1,normalized formatting or known alias
+101,ORD-1006,order_date,01/26/2025,2025-01-26,normalized formatting or known alias
+101,ORD-1006,region,NE,Northeast,normalized formatting or known alias
+101,ORD-1006,unit_price,79.0,79.00,normalized formatting or known alias
+102,ORD-1293,order_date,05/22/2025,2025-05-22,normalized formatting or known alias
+102,ORD-1293,region,MW,Midwest,normalized formatting or known alias
+103,ORD-1111,order_date,01/04/2025,2025-01-04,normalized formatting or known alias
+103,ORD-1111,region,SOUTHEAST,Southeast,normalized formatting or known alias
+104,ORD-1095,region,northeast,Northeast,normalized formatting or known alias
+104,ORD-1095,unit_price,79.0,79.00,normalized formatting or known alias
+105,ORD-1147,region,SE,Southeast,normalized formatting or known alias
+105,ORD-1147,unit_price,199.0,199.00,normalized formatting or known alias
+106,ORD-1145,order_date,"Mar 8, 2025",2025-03-08,normalized formatting or known alias
+106,ORD-1145,unit_price,$14.99,14.99,normalized formatting or known alias
+107,ORD-1333,region,WEST,West,normalized formatting or known alias
+107,ORD-1333,unit_price,79.0,79.00,normalized formatting or known alias
+107,ORD-1333,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+109,ORD-1126,order_date,02/04/2025,2025-02-04,normalized formatting or known alias
+109,ORD-1126,unit_price,79.0,79.00,normalized formatting or known alias
+110,ORD-1395,discount_pct,10,1E+1,normalized formatting or known alias
+110,ORD-1395,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+111,ORD-1214,region,SOUTHEAST,Southeast,normalized formatting or known alias
+111,ORD-1214,discount_pct,10,1E+1,normalized formatting or known alias
+112,ORD-1210,unit_price,19.5,19.50,normalized formatting or known alias
+113,ORD-1416,unit_price,$79.00,79.00,normalized formatting or known alias
+114,ORD-1163,order_date,04/24/2025,2025-04-24,normalized formatting or known alias
+114,ORD-1163,region,SE,Southeast,normalized formatting or known alias
+114,ORD-1163,discount_pct,10,1E+1,normalized formatting or known alias
+114,ORD-1163,sales_rep, Lee Watkins ,Lee Watkins,normalized formatting or known alias
+115,ORD-1391,order_date,04/07/2025,2025-04-07,normalized formatting or known alias
+116,ORD-1368,region,West ,West,normalized formatting or known alias
+116,ORD-1368,status,Completed ,Completed,normalized formatting or known alias
+117,ORD-1418,region,West ,West,normalized formatting or known alias
+117,ORD-1418,unit_price,199.0,199.00,normalized formatting or known alias
+117,ORD-1418,discount_pct,10,1E+1,normalized formatting or known alias
+117,ORD-1418,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+118,ORD-1113,discount_pct,10,1E+1,normalized formatting or known alias
+119,ORD-1008,order_date,"Jan 22, 2025",2025-01-22,normalized formatting or known alias
+119,ORD-1008,region,NORTHEAST,Northeast,normalized formatting or known alias
+119,ORD-1008,unit_price,$24.99,24.99,normalized formatting or known alias
+120,ORD-1295,region,midwest,Midwest,normalized formatting or known alias
+120,ORD-1295,product,LAPTOP SLEEVE,Laptop Sleeve,normalized formatting or known alias
+121,ORD-1066,unit_price,19.5,19.50,normalized formatting or known alias
+122,ORD-1059,order_date,"Apr 10, 2025",2025-04-10,normalized formatting or known alias
+122,ORD-1059,unit_price,199.0,199.00,normalized formatting or known alias
+123,ORD-1237,region,Mid-West,Midwest,normalized formatting or known alias
+124,ORD-1010,unit_price,79.0,79.00,normalized formatting or known alias
+125,ORD-1244,status,COMPLETED,Completed,normalized formatting or known alias
+126,ORD-1178,region,southeast,Southeast,normalized formatting or known alias
+126,ORD-1178,discount_pct,10,1E+1,normalized formatting or known alias
+127,ORD-1092,order_date,"May 4, 2025",2025-05-04,normalized formatting or known alias
+128,ORD-1198,unit_price,79.0,79.00,normalized formatting or known alias
+128,ORD-1198,discount_pct,10,1E+1,normalized formatting or known alias
+128,ORD-1198,status,Completed ,Completed,normalized formatting or known alias
+129,ORD-1318,unit_price,199.0,199.00,normalized formatting or known alias
+130,ORD-1340,order_date,02/08/2025,2025-02-08,normalized formatting or known alias
+130,ORD-1340,unit_price,59.5,59.50,normalized formatting or known alias
+131,ORD-1035,region,NORTHEAST,Northeast,normalized formatting or known alias
+131,ORD-1035,discount_pct,10,1E+1,normalized formatting or known alias
+132,ORD-1211,region,SE,Southeast,normalized formatting or known alias
+132,ORD-1211,product,PULSE SMARTWATCH,Pulse Smartwatch,normalized formatting or known alias
+132,ORD-1211,unit_price,$199.00,199.00,normalized formatting or known alias
+133,ORD-1055,order_date,"Mar 12, 2025",2025-03-12,normalized formatting or known alias
+133,ORD-1055,region,NE,Northeast,normalized formatting or known alias
+133,ORD-1055,unit_price,199.0,199.00,normalized formatting or known alias
+133,ORD-1055,status,COMPLETED,Completed,normalized formatting or known alias
+134,ORD-1311,region,midwest,Midwest,normalized formatting or known alias
+134,ORD-1311,unit_price,19.5,19.50,normalized formatting or known alias
+135,ORD-1132,region,South East,Southeast,normalized formatting or known alias
+135,ORD-1132,unit_price,$79.00,79.00,normalized formatting or known alias
+136,ORD-1149,region,southeast,Southeast,normalized formatting or known alias
+136,ORD-1149,unit_price,199.0,199.00,normalized formatting or known alias
+136,ORD-1149,sales_rep,DANA ORTIZ,Dana Ortiz,normalized formatting or known alias
+137,ORD-1307,order_date,"Jun 30, 2025",2025-06-30,normalized formatting or known alias
+137,ORD-1307,unit_price,199.0,199.00,normalized formatting or known alias
+138,ORD-1288,order_date,05/26/2025,2025-05-26,normalized formatting or known alias
+138,ORD-1288,discount_pct,10,1E+1,normalized formatting or known alias
+139,ORD-1209,unit_price,199.0,199.00,normalized formatting or known alias
+139,ORD-1209,discount_pct,10,1E+1,normalized formatting or known alias
+140,ORD-1319,order_date,01/16/2025,2025-01-16,normalized formatting or known alias
+140,ORD-1319,unit_price,79.0,79.00,normalized formatting or known alias
+141,ORD-1267,order_date,"Mar 3, 2025",2025-03-03,normalized formatting or known alias
+142,ORD-1339,unit_price,199.0,199.00,normalized formatting or known alias
+143,ORD-1096,status,Completed ,Completed,normalized formatting or known alias
+144,ORD-1303,region,MIDWEST,Midwest,normalized formatting or known alias
+145,ORD-1341,discount_pct,10,1E+1,normalized formatting or known alias
+146,ORD-1222,status,completed,Completed,normalized formatting or known alias
+147,ORD-1134,region,SE,Southeast,normalized formatting or known alias
+148,ORD-1089,region,NORTHEAST,Northeast,normalized formatting or known alias
+148,ORD-1089,status,Completed ,Completed,normalized formatting or known alias
+149,ORD-1206,order_date,"Jun 11, 2025",2025-06-11,normalized formatting or known alias
+150,ORD-1042,region,northeast,Northeast,normalized formatting or known alias
+150,ORD-1042,unit_price,79.0,79.00,normalized formatting or known alias
+151,ORD-1003,product,PULSE SMARTWATCH,Pulse Smartwatch,normalized formatting or known alias
+151,ORD-1003,unit_price,199.0,199.00,normalized formatting or known alias
+152,ORD-1242,unit_price,79.0,79.00,normalized formatting or known alias
+153,ORD-1381,order_date,"Mar 20, 2025",2025-03-20,normalized formatting or known alias
+153,ORD-1381,status,completed,Completed,normalized formatting or known alias
+155,ORD-1408,order_date,05/11/2025,2025-05-11,normalized formatting or known alias
+156,ORD-1314,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+157,ORD-1221,region,southeast,Southeast,normalized formatting or known alias
+158,ORD-1117,order_date,"Jan 10, 2025",2025-01-10,normalized formatting or known alias
+158,ORD-1117,region,South East,Southeast,normalized formatting or known alias
+158,ORD-1117,unit_price,79.0,79.00,normalized formatting or known alias
+160,ORD-1212,order_date,"Jun 15, 2025",2025-06-15,normalized formatting or known alias
+160,ORD-1212,region,southeast,Southeast,normalized formatting or known alias
+160,ORD-1212,unit_price,79.0,79.00,normalized formatting or known alias
+161,ORD-1255,sales_rep, Sam Okafor ,Sam Okafor,normalized formatting or known alias
+162,ORD-1063,order_date,"Apr 17, 2025",2025-04-17,normalized formatting or known alias
+162,ORD-1063,unit_price,$19.50,19.50,normalized formatting or known alias
+162,ORD-1063,discount_pct,10,1E+1,normalized formatting or known alias
+162,ORD-1063,status,COMPLETED,Completed,normalized formatting or known alias
+163,ORD-1015,discount_pct,10,1E+1,normalized formatting or known alias
+164,ORD-1352,order_date,02/08/2025,2025-02-08,normalized formatting or known alias
+164,ORD-1352,unit_price,19.5,19.50,normalized formatting or known alias
+165,ORD-1256,unit_price,$89.99,89.99,normalized formatting or known alias
+165,ORD-1256,discount_pct,10,1E+1,normalized formatting or known alias
+166,ORD-1016,region,NE,Northeast,normalized formatting or known alias
+166,ORD-1016,unit_price,$79.00,79.00,normalized formatting or known alias
+166,ORD-1016,status,cancelled,Cancelled,normalized formatting or known alias
+168,ORD-1419,order_date,06/27/2025,2025-06-27,normalized formatting or known alias
+168,ORD-1419,region,west,West,normalized formatting or known alias
+168,ORD-1419,discount_pct,10,1E+1,normalized formatting or known alias
+169,ORD-1248,unit_price,79.0,79.00,normalized formatting or known alias
+170,ORD-1076,region,NE,Northeast,normalized formatting or known alias
+170,ORD-1076,discount_pct,10,1E+1,normalized formatting or known alias
+171,ORD-1262,order_date,"Mar 22, 2025",2025-03-22,normalized formatting or known alias
+172,ORD-1084,status,completed,Completed,normalized formatting or known alias
+174,ORD-1167,region,SOUTHEAST,Southeast,normalized formatting or known alias
+174,ORD-1167,status,completed,Completed,normalized formatting or known alias
+175,ORD-1223,region,SOUTHEAST,Southeast,normalized formatting or known alias
+175,ORD-1223,product,LUMEN DESK LAMP,Lumen Desk Lamp,normalized formatting or known alias
+175,ORD-1223,unit_price,$34.99,34.99,normalized formatting or known alias
+176,ORD-1327,order_date,"Jan 28, 2025",2025-01-28,normalized formatting or known alias
+177,ORD-1021,region,NORTHEAST,Northeast,normalized formatting or known alias
+177,ORD-1021,discount_pct,10,1E+1,normalized formatting or known alias
+177,ORD-1021,status,completed,Completed,normalized formatting or known alias
+178,ORD-1080,region,northeast,Northeast,normalized formatting or known alias
+178,ORD-1080,sales_rep, Marcus Bell ,Marcus Bell,normalized formatting or known alias
+179,ORD-1172,region,South East,Southeast,normalized formatting or known alias
+179,ORD-1172,unit_price,19.5,19.50,normalized formatting or known alias
+180,ORD-1399,region,west,West,normalized formatting or known alias
+180,ORD-1399,discount_pct,10,1E+1,normalized formatting or known alias
+181,ORD-1354,order_date,"Feb 25, 2025",2025-02-25,normalized formatting or known alias
+182,ORD-1158,order_date,04/30/2025,2025-04-30,normalized formatting or known alias
+182,ORD-1158,unit_price,$24.99,24.99,normalized formatting or known alias
+183,ORD-1170,region,SE,Southeast,normalized formatting or known alias
+183,ORD-1170,status,Completed ,Completed,normalized formatting or known alias
+184,ORD-1332,unit_price,59.5,59.50,normalized formatting or known alias
+184,ORD-1332,status,COMPLETED,Completed,normalized formatting or known alias
+185,ORD-1205,region,SOUTHEAST,Southeast,normalized formatting or known alias
+185,ORD-1205,status,Completed ,Completed,normalized formatting or known alias
+186,ORD-1238,unit_price,$89.99,89.99,normalized formatting or known alias
+187,ORD-1103,order_date,06/03/2025,2025-06-03,normalized formatting or known alias
+187,ORD-1103,unit_price,19.5,19.50,normalized formatting or known alias
+187,ORD-1103,sales_rep, Priya Shah ,Priya Shah,normalized formatting or known alias
+189,ORD-1107,order_date,06/17/2025,2025-06-17,normalized formatting or known alias
+189,ORD-1107,region,NE,Northeast,normalized formatting or known alias
+189,ORD-1107,unit_price,59.5,59.50,normalized formatting or known alias
+190,ORD-1304,order_date,06/09/2025,2025-06-09,normalized formatting or known alias
+190,ORD-1304,region,midwest,Midwest,normalized formatting or known alias
+190,ORD-1304,unit_price,$24.99,24.99,normalized formatting or known alias
+190,ORD-1304,discount_pct,10,1E+1,normalized formatting or known alias
+190,ORD-1304,sales_rep, Jo Brennan ,Jo Brennan,normalized formatting or known alias
+191,ORD-1272,order_date,04/06/2025,2025-04-06,normalized formatting or known alias
+191,ORD-1272,region,Mid-West,Midwest,normalized formatting or known alias
+191,ORD-1272,unit_price,$24.99,24.99,normalized formatting or known alias
+191,ORD-1272,discount_pct,10,1E+1,normalized formatting or known alias
+192,ORD-1287,region,MIDWEST,Midwest,normalized formatting or known alias
+192,ORD-1287,unit_price,$24.99,24.99,normalized formatting or known alias
+193,ORD-1130,order_date,"Feb 9, 2025",2025-02-09,normalized formatting or known alias
+193,ORD-1130,region,South East,Southeast,normalized formatting or known alias
+194,ORD-1102,order_date,06/18/2025,2025-06-18,normalized formatting or known alias
+195,ORD-1016,region,NE,Northeast,normalized formatting or known alias
+195,ORD-1016,unit_price,$79.00,79.00,normalized formatting or known alias
+195,ORD-1016,status,cancelled,Cancelled,normalized formatting or known alias
+197,ORD-1056,order_date,04/26/2025,2025-04-26,normalized formatting or known alias
+197,ORD-1056,region,northeast,Northeast,normalized formatting or known alias
+198,ORD-1280,region,MW,Midwest,normalized formatting or known alias
+198,ORD-1280,unit_price,59.5,59.50,normalized formatting or known alias
+199,ORD-1358,order_date,02/06/2025,2025-02-06,normalized formatting or known alias
+199,ORD-1358,region,WEST,West,normalized formatting or known alias
+199,ORD-1358,discount_pct,10,1E+1,normalized formatting or known alias
+201,ORD-1387,unit_price,$34.99,34.99,normalized formatting or known alias
+201,ORD-1387,status,completed,Completed,normalized formatting or known alias
+203,ORD-1243,region,Mid-West,Midwest,normalized formatting or known alias
+203,ORD-1243,unit_price,79.0,79.00,normalized formatting or known alias
+204,ORD-1121,discount_pct,10,1E+1,normalized formatting or known alias
+205,ORD-1415,order_date,"Jun 5, 2025",2025-06-05,normalized formatting or known alias
+206,ORD-1175,region,southeast,Southeast,normalized formatting or known alias
+206,ORD-1175,unit_price,59.5,59.50,normalized formatting or known alias
+208,ORD-1094,unit_price,$89.99,89.99,normalized formatting or known alias
+208,ORD-1094,discount_pct,10,1E+1,normalized formatting or known alias
+210,ORD-1330,unit_price,79.0,79.00,normalized formatting or known alias
+211,ORD-1100,unit_price,79.0,79.00,normalized formatting or known alias
+211,ORD-1100,status,Completed ,Completed,normalized formatting or known alias
+212,ORD-1034,unit_price,199.0,199.00,normalized formatting or known alias
+213,ORD-1308,order_date,06/08/2025,2025-06-08,normalized formatting or known alias
+213,ORD-1308,discount_pct,10,1E+1,normalized formatting or known alias
+214,ORD-1093,order_date,06/19/2025,2025-06-19,normalized formatting or known alias
+214,ORD-1093,region,North East,Northeast,normalized formatting or known alias
+214,ORD-1093,product,BREWMASTER COFFEE MAKER,Brewmaster Coffee Maker,normalized formatting or known alias
+214,ORD-1093,unit_price,79.0,79.00,normalized formatting or known alias
+214,ORD-1093,status,Completed ,Completed,normalized formatting or known alias
+215,ORD-1004,unit_price,199.0,199.00,normalized formatting or known alias
+216,ORD-1136,status,completed,Completed,normalized formatting or known alias
+217,ORD-1019,unit_price,19.5,19.50,normalized formatting or known alias
+218,ORD-1222,status,completed,Completed,normalized formatting or known alias
+219,ORD-1420,order_date,06/14/2025,2025-06-14,normalized formatting or known alias
+219,ORD-1420,status,completed,Completed,normalized formatting or known alias
+220,ORD-1164,region,southeast,Southeast,normalized formatting or known alias
+221,ORD-1371,order_date,03/31/2025,2025-03-31,normalized formatting or known alias
+221,ORD-1371,unit_price,199.0,199.00,normalized formatting or known alias
+221,ORD-1371,status,completed,Completed,normalized formatting or known alias
+222,ORD-1258,order_date,"Mar 9, 2025",2025-03-09,normalized formatting or known alias
+223,ORD-1029,region,NORTHEAST,Northeast,normalized formatting or known alias
+223,ORD-1029,status,Completed ,Completed,normalized formatting or known alias
+224,ORD-1247,order_date,02/02/2025,2025-02-02,normalized formatting or known alias
+225,ORD-1367,order_date,"Mar 16, 2025",2025-03-16,normalized formatting or known alias
+225,ORD-1367,region,WEST,West,normalized formatting or known alias
+225,ORD-1367,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+226,ORD-1282,region,MIDWEST,Midwest,normalized formatting or known alias
+226,ORD-1282,unit_price,199.0,199.00,normalized formatting or known alias
+226,ORD-1282,status,COMPLETED,Completed,normalized formatting or known alias
+227,ORD-1337,order_date,01/05/2025,2025-01-05,normalized formatting or known alias
+227,ORD-1337,status,Completed ,Completed,normalized formatting or known alias
+227,ORD-1337,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+228,ORD-1201,unit_price,199.0,199.00,normalized formatting or known alias
+229,ORD-1014,order_date,01/15/2025,2025-01-15,normalized formatting or known alias
+229,ORD-1014,unit_price,199.0,199.00,normalized formatting or known alias
+229,ORD-1014,sales_rep, Priya Shah ,Priya Shah,normalized formatting or known alias
+230,ORD-1239,status,completed,Completed,normalized formatting or known alias
+231,ORD-1076,region,NE,Northeast,normalized formatting or known alias
+231,ORD-1076,discount_pct,10,1E+1,normalized formatting or known alias
+232,ORD-1101,region,NE,Northeast,normalized formatting or known alias
+234,ORD-1384,unit_price,199.0,199.00,normalized formatting or known alias
+234,ORD-1384,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+235,ORD-1131,order_date,"Feb 21, 2025",2025-02-21,normalized formatting or known alias
+236,ORD-1356,unit_price,$59.50,59.50,normalized formatting or known alias
+237,ORD-1133,order_date,03/16/2025,2025-03-16,normalized formatting or known alias
+237,ORD-1133,unit_price,$29.99,29.99,normalized formatting or known alias
+238,ORD-1393,region,west,West,normalized formatting or known alias
+238,ORD-1393,unit_price,59.5,59.50,normalized formatting or known alias
+239,ORD-1259,region,MIDWEST,Midwest,normalized formatting or known alias
+239,ORD-1259,unit_price,19.5,19.50,normalized formatting or known alias
+240,ORD-1169,order_date,05/12/2025,2025-05-12,normalized formatting or known alias
+240,ORD-1169,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+241,ORD-1328,order_date,"Jan 15, 2025",2025-01-15,normalized formatting or known alias
+241,ORD-1328,region,west,West,normalized formatting or known alias
+241,ORD-1328,unit_price,19.5,19.50,normalized formatting or known alias
+242,ORD-1218,status,COMPLETED,Completed,normalized formatting or known alias
+243,ORD-1007,region,NE,Northeast,normalized formatting or known alias
+243,ORD-1007,discount_pct,10,1E+1,normalized formatting or known alias
+244,ORD-1177,order_date,"May 24, 2025",2025-05-24,normalized formatting or known alias
+245,ORD-1200,region,South East,Southeast,normalized formatting or known alias
+246,ORD-1363,order_date,02/27/2025,2025-02-27,normalized formatting or known alias
+246,ORD-1363,status,Completed ,Completed,normalized formatting or known alias
+247,ORD-1156,unit_price,199.0,199.00,normalized formatting or known alias
+248,ORD-1305,order_date,06/25/2025,2025-06-25,normalized formatting or known alias
+249,ORD-1342,unit_price,$59.50,59.50,normalized formatting or known alias
+249,ORD-1342,status,completed,Completed,normalized formatting or known alias
+250,ORD-1270,discount_pct,10,1E+1,normalized formatting or known alias
+251,ORD-1376,region,west,West,normalized formatting or known alias
+251,ORD-1376,unit_price,199.0,199.00,normalized formatting or known alias
+251,ORD-1376,discount_pct,10,1E+1,normalized formatting or known alias
+252,ORD-1241,order_date,01/12/2025,2025-01-12,normalized formatting or known alias
+252,ORD-1241,region,midwest,Midwest,normalized formatting or known alias
+252,ORD-1241,unit_price,199.0,199.00,normalized formatting or known alias
+252,ORD-1241,discount_pct,10,1E+1,normalized formatting or known alias
+253,ORD-1022,region,NE,Northeast,normalized formatting or known alias
+253,ORD-1022,unit_price,199.0,199.00,normalized formatting or known alias
+254,ORD-1331,order_date,01/30/2025,2025-01-30,normalized formatting or known alias
+254,ORD-1331,unit_price,79.0,79.00,normalized formatting or known alias
+255,ORD-1269,order_date,03/30/2025,2025-03-30,normalized formatting or known alias
+256,ORD-1317,order_date,01/24/2025,2025-01-24,normalized formatting or known alias
+256,ORD-1317,region,W,West,normalized formatting or known alias
+256,ORD-1317,unit_price,19.5,19.50,normalized formatting or known alias
+257,ORD-1252,region,MIDWEST,Midwest,normalized formatting or known alias
+257,ORD-1252,unit_price,79.0,79.00,normalized formatting or known alias
+258,ORD-1299,unit_price,$14.99,14.99,normalized formatting or known alias
+259,ORD-1400,order_date,04/10/2025,2025-04-10,normalized formatting or known alias
+259,ORD-1400,region,W,West,normalized formatting or known alias
+259,ORD-1400,unit_price,$79.00,79.00,normalized formatting or known alias
+260,ORD-1260,unit_price,19.5,19.50,normalized formatting or known alias
+260,ORD-1260,status,completed,Completed,normalized formatting or known alias
+262,ORD-1099,region,NORTHEAST,Northeast,normalized formatting or known alias
+262,ORD-1099,unit_price,$59.50,59.50,normalized formatting or known alias
+263,ORD-1187,region,SE,Southeast,normalized formatting or known alias
+264,ORD-1151,order_date,04/12/2025,2025-04-12,normalized formatting or known alias
+264,ORD-1151,status,completed,Completed,normalized formatting or known alias
+265,ORD-1032,order_date,02/02/2025,2025-02-02,normalized formatting or known alias
+265,ORD-1032,unit_price,79.0,79.00,normalized formatting or known alias
+267,ORD-1265,order_date,"Mar 15, 2025",2025-03-15,normalized formatting or known alias
+267,ORD-1265,discount_pct,10,1E+1,normalized formatting or known alias
+268,ORD-1026,region,northeast,Northeast,normalized formatting or known alias
+270,ORD-1158,order_date,04/30/2025,2025-04-30,normalized formatting or known alias
+270,ORD-1158,unit_price,$24.99,24.99,normalized formatting or known alias
+271,ORD-1023,order_date,"Feb 27, 2025",2025-02-27,normalized formatting or known alias
+271,ORD-1023,region,northeast,Northeast,normalized formatting or known alias
+272,ORD-1375,region,west,West,normalized formatting or known alias
+273,ORD-1227,region,South East,Southeast,normalized formatting or known alias
+273,ORD-1227,discount_pct,10,1E+1,normalized formatting or known alias
+274,ORD-1409,region,WEST,West,normalized formatting or known alias
+274,ORD-1409,unit_price,$19.50,19.50,normalized formatting or known alias
+274,ORD-1409,discount_pct,10,1E+1,normalized formatting or known alias
+275,ORD-1078,order_date,05/25/2025,2025-05-25,normalized formatting or known alias
+275,ORD-1078,region,North East,Northeast,normalized formatting or known alias
+276,ORD-1395,discount_pct,10,1E+1,normalized formatting or known alias
+276,ORD-1395,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+277,ORD-1394,unit_price,$29.99,29.99,normalized formatting or known alias
+279,ORD-1301,order_date,"Jun 22, 2025",2025-06-22,normalized formatting or known alias
+280,ORD-1284,status,RETURNED,Returned,normalized formatting or known alias
+282,ORD-1074,status,Completed ,Completed,normalized formatting or known alias
+283,ORD-1069,sales_rep, Priya Shah ,Priya Shah,normalized formatting or known alias
+284,ORD-1196,order_date,06/20/2025,2025-06-20,normalized formatting or known alias
+284,ORD-1196,region,SOUTHEAST,Southeast,normalized formatting or known alias
+285,ORD-1071,order_date,04/05/2025,2025-04-05,normalized formatting or known alias
+285,ORD-1071,unit_price,19.5,19.50,normalized formatting or known alias
+285,ORD-1071,status,completed,Completed,normalized formatting or known alias
+286,ORD-1154,region,southeast,Southeast,normalized formatting or known alias
+287,ORD-1349,unit_price,59.5,59.50,normalized formatting or known alias
+289,ORD-1338,order_date,01/25/2025,2025-01-25,normalized formatting or known alias
+289,ORD-1338,region,W,West,normalized formatting or known alias
+289,ORD-1338,unit_price,$89.99,89.99,normalized formatting or known alias
+289,ORD-1338,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+290,ORD-1053,order_date,03/29/2025,2025-03-29,normalized formatting or known alias
+291,ORD-1046,status,RETURNED,Returned,normalized formatting or known alias
+293,ORD-1118,order_date,01/08/2025,2025-01-08,normalized formatting or known alias
+293,ORD-1118,unit_price,19.5,19.50,normalized formatting or known alias
+294,ORD-1037,region,NORTHEAST,Northeast,normalized formatting or known alias
+295,ORD-1291,order_date,05/13/2025,2025-05-13,normalized formatting or known alias
+295,ORD-1291,unit_price,79.0,79.00,normalized formatting or known alias
+296,ORD-1289,region,MW,Midwest,normalized formatting or known alias
+297,ORD-1217,region,southeast,Southeast,normalized formatting or known alias
+297,ORD-1217,unit_price,79.0,79.00,normalized formatting or known alias
+298,ORD-1062,region,NORTHEAST,Northeast,normalized formatting or known alias
+298,ORD-1062,unit_price,199.0,199.00,normalized formatting or known alias
+299,ORD-1323,order_date,"Jan 16, 2025",2025-01-16,normalized formatting or known alias
+299,ORD-1323,unit_price,79.0,79.00,normalized formatting or known alias
+300,ORD-1285,order_date,05/14/2025,2025-05-14,normalized formatting or known alias
+300,ORD-1285,unit_price,$59.50,59.50,normalized formatting or known alias
+301,ORD-1005,region,NORTHEAST,Northeast,normalized formatting or known alias
+301,ORD-1005,unit_price,79.0,79.00,normalized formatting or known alias
+301,ORD-1005,status,COMPLETED,Completed,normalized formatting or known alias
+304,ORD-1116,order_date,"Jan 6, 2025",2025-01-06,normalized formatting or known alias
+304,ORD-1116,unit_price,59.5,59.50,normalized formatting or known alias
+305,ORD-1342,region,west,West,normalized formatting or known alias
+305,ORD-1342,unit_price,$59.50,59.50,normalized formatting or known alias
+305,ORD-1342,status,completed,Completed,normalized formatting or known alias
+305,ORD-1342,sales_rep,CHRIS VEGA,Chris Vega,normalized formatting or known alias
+306,ORD-1155,discount_pct,10,1E+1,normalized formatting or known alias
+307,ORD-1310,region,MW,Midwest,normalized formatting or known alias
+309,ORD-1245,order_date,02/26/2025,2025-02-26,normalized formatting or known alias
+310,ORD-1176,region,South East,Southeast,normalized formatting or known alias
+310,ORD-1176,unit_price,19.5,19.50,normalized formatting or known alias
+311,ORD-1110,product,ZEPHYR HEADPHONES,Zephyr Headphones,normalized formatting or known alias
+311,ORD-1110,unit_price,$89.99,89.99,normalized formatting or known alias
+313,ORD-1380,order_date,03/18/2025,2025-03-18,normalized formatting or known alias
+315,ORD-1312,unit_price,19.5,19.50,normalized formatting or known alias
+315,ORD-1312,status,Completed ,Completed,normalized formatting or known alias
+316,ORD-1120,region,SE,Southeast,normalized formatting or known alias
+316,ORD-1120,status,completed,Completed,normalized formatting or known alias
+317,ORD-1157,region,southeast,Southeast,normalized formatting or known alias
+317,ORD-1157,unit_price,19.5,19.50,normalized formatting or known alias
+318,ORD-1203,order_date,06/21/2025,2025-06-21,normalized formatting or known alias
+318,ORD-1203,status,Completed ,Completed,normalized formatting or known alias
+319,ORD-1027,region,North East,Northeast,normalized formatting or known alias
+319,ORD-1027,unit_price,79.0,79.00,normalized formatting or known alias
+320,ORD-1401,region,W,West,normalized formatting or known alias
+321,ORD-1191,region,SE,Southeast,normalized formatting or known alias
+321,ORD-1191,discount_pct,10,1E+1,normalized formatting or known alias
+322,ORD-1043,region,northeast,Northeast,normalized formatting or known alias
+323,ORD-1129,unit_price,$19.50,19.50,normalized formatting or known alias
+324,ORD-1185,unit_price,$19.50,19.50,normalized formatting or known alias
+326,ORD-1141,region,South East,Southeast,normalized formatting or known alias
+327,ORD-1082,order_date,"May 1, 2025",2025-05-01,normalized formatting or known alias
+327,ORD-1082,discount_pct,10,1E+1,normalized formatting or known alias
+327,ORD-1082,status,completed,Completed,normalized formatting or known alias
+328,ORD-1155,discount_pct,10,1E+1,normalized formatting or known alias
+329,ORD-1372,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+330,ORD-1104,region,NE,Northeast,normalized formatting or known alias
+330,ORD-1104,unit_price,59.5,59.50,normalized formatting or known alias
+331,ORD-1335,region,W,West,normalized formatting or known alias
+331,ORD-1335,unit_price,199.0,199.00,normalized formatting or known alias
+331,ORD-1335,sales_rep, Tara Nguyen ,Tara Nguyen,normalized formatting or known alias
+334,ORD-1226,region,SOUTHEAST,Southeast,normalized formatting or known alias
+334,ORD-1226,unit_price,199.0,199.00,normalized formatting or known alias
+335,ORD-1081,unit_price,79.0,79.00,normalized formatting or known alias
+336,ORD-1064,product,NOVA WEBCAM,Nova Webcam,normalized formatting or known alias
+336,ORD-1064,unit_price,59.5,59.50,normalized formatting or known alias
+336,ORD-1064,discount_pct,10,1E+1,normalized formatting or known alias
+337,ORD-1091,sales_rep, Priya Shah ,Priya Shah,normalized formatting or known alias
+339,ORD-1236,unit_price,$89.99,89.99,normalized formatting or known alias
+340,ORD-1306,order_date,"Jun 30, 2025",2025-06-30,normalized formatting or known alias
+340,ORD-1306,unit_price,59.5,59.50,normalized formatting or known alias
+341,ORD-1051,status,completed,Completed,normalized formatting or known alias
+341,ORD-1051,sales_rep, Priya Shah ,Priya Shah,normalized formatting or known alias
+342,ORD-1024,order_date,02/03/2025,2025-02-03,normalized formatting or known alias
+342,ORD-1024,unit_price,59.5,59.50,normalized formatting or known alias
+342,ORD-1024,status,Completed ,Completed,normalized formatting or known alias
+343,ORD-1025,order_date,"Feb 6, 2025",2025-02-06,normalized formatting or known alias
+343,ORD-1025,product,ZEPHYR HEADPHONES,Zephyr Headphones,normalized formatting or known alias
+343,ORD-1025,discount_pct,10,1E+1,normalized formatting or known alias
+343,ORD-1025,status,Completed ,Completed,normalized formatting or known alias
+344,ORD-1176,region,South East,Southeast,normalized formatting or known alias
+344,ORD-1176,unit_price,19.5,19.50,normalized formatting or known alias
+345,ORD-1249,product,LAPTOP SLEEVE,Laptop Sleeve,normalized formatting or known alias
+345,ORD-1249,sales_rep, Jo Brennan ,Jo Brennan,normalized formatting or known alias
+346,ORD-1290,order_date,"May 17, 2025",2025-05-17,normalized formatting or known alias
+346,ORD-1290,discount_pct,10,1E+1,normalized formatting or known alias
+347,ORD-1067,region,NE,Northeast,normalized formatting or known alias
+348,ORD-1362,order_date,"Feb 18, 2025",2025-02-18,normalized formatting or known alias
+348,ORD-1362,unit_price,19.5,19.50,normalized formatting or known alias
+349,ORD-1281,region,MIDWEST,Midwest,normalized formatting or known alias
+349,ORD-1281,unit_price,59.5,59.50,normalized formatting or known alias
+349,ORD-1281,discount_pct,10,1E+1,normalized formatting or known alias
+349,ORD-1281,sales_rep, Jo Brennan ,Jo Brennan,normalized formatting or known alias
+350,ORD-1098,region,North East,Northeast,normalized formatting or known alias
+350,ORD-1098,status,COMPLETED,Completed,normalized formatting or known alias
+351,ORD-1173,discount_pct,10,1E+1,normalized formatting or known alias
+351,ORD-1173,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+352,ORD-1146,region,SOUTHEAST,Southeast,normalized formatting or known alias
+353,ORD-1388,order_date,04/11/2025,2025-04-11,normalized formatting or known alias
+353,ORD-1388,status,completed,Completed,normalized formatting or known alias
+354,ORD-1356,region,west,West,normalized formatting or known alias
+354,ORD-1356,unit_price,$59.50,59.50,normalized formatting or known alias
+354,ORD-1356,sales_rep,CHRIS VEGA,Chris Vega,normalized formatting or known alias
+355,ORD-1373,unit_price,79.0,79.00,normalized formatting or known alias
+356,ORD-1254,region,MW,Midwest,normalized formatting or known alias
+356,ORD-1254,status,Completed ,Completed,normalized formatting or known alias
+357,ORD-1109,order_date,"Jun 23, 2025",2025-06-23,normalized formatting or known alias
+357,ORD-1109,region,northeast,Northeast,normalized formatting or known alias
+358,ORD-1007,region,NE,Northeast,normalized formatting or known alias
+358,ORD-1007,discount_pct,10,1E+1,normalized formatting or known alias
+359,ORD-1402,region,west,West,normalized formatting or known alias
+359,ORD-1402,unit_price,79.0,79.00,normalized formatting or known alias
+360,ORD-1112,discount_pct,10,1E+1,normalized formatting or known alias
+361,ORD-1204,order_date,06/15/2025,2025-06-15,normalized formatting or known alias
+361,ORD-1204,region,South East,Southeast,normalized formatting or known alias
+362,ORD-1274,region,MW,Midwest,normalized formatting or known alias
+363,ORD-1033,unit_price,$89.99,89.99,normalized formatting or known alias
+363,ORD-1033,discount_pct,10,1E+1,normalized formatting or known alias
+364,ORD-1184,order_date,05/11/2025,2025-05-11,normalized formatting or known alias
+364,ORD-1184,region,SE,Southeast,normalized formatting or known alias
+365,ORD-1326,region,W,West,normalized formatting or known alias
+365,ORD-1326,discount_pct,10,1E+1,normalized formatting or known alias
+365,ORD-1326,status,COMPLETED,Completed,normalized formatting or known alias
+366,ORD-1235,order_date,01/21/2025,2025-01-21,normalized formatting or known alias
+366,ORD-1235,region,Mid-West,Midwest,normalized formatting or known alias
+367,ORD-1407,unit_price,$19.50,19.50,normalized formatting or known alias
+368,ORD-1002,unit_price,19.5,19.50,normalized formatting or known alias
+368,ORD-1002,status,completed,Completed,normalized formatting or known alias
+369,ORD-1298,region,MW,Midwest,normalized formatting or known alias
+369,ORD-1298,discount_pct,10,1E+1,normalized formatting or known alias
+371,ORD-1250,order_date,02/26/2025,2025-02-26,normalized formatting or known alias
+371,ORD-1250,region,MIDWEST,Midwest,normalized formatting or known alias
+371,ORD-1250,unit_price,79.0,79.00,normalized formatting or known alias
+372,ORD-1233,order_date,01/29/2025,2025-01-29,normalized formatting or known alias
+372,ORD-1233,unit_price,$29.99,29.99,normalized formatting or known alias
+373,ORD-1189,region,southeast,Southeast,normalized formatting or known alias
+374,ORD-1143,region,South East,Southeast,normalized formatting or known alias
+374,ORD-1143,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+375,ORD-1382,order_date,03/24/2025,2025-03-24,normalized formatting or known alias
+375,ORD-1382,region,WEST,West,normalized formatting or known alias
+375,ORD-1382,unit_price,59.5,59.50,normalized formatting or known alias
+376,ORD-1305,order_date,06/25/2025,2025-06-25,normalized formatting or known alias
+377,ORD-1207,order_date,06/12/2025,2025-06-12,normalized formatting or known alias
+377,ORD-1207,region,South East,Southeast,normalized formatting or known alias
+378,ORD-1048,unit_price,19.5,19.50,normalized formatting or known alias
+378,ORD-1048,status,COMPLETED,Completed,normalized formatting or known alias
+379,ORD-1325,order_date,"Jan 28, 2025",2025-01-28,normalized formatting or known alias
+379,ORD-1325,discount_pct,10,1E+1,normalized formatting or known alias
+379,ORD-1325,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+380,ORD-1039,region,northeast,Northeast,normalized formatting or known alias
+380,ORD-1039,unit_price,199.0,199.00,normalized formatting or known alias
+381,ORD-1232,product,ZEPHYR HEADPHONES,Zephyr Headphones,normalized formatting or known alias
+382,ORD-1193,order_date,05/28/2025,2025-05-28,normalized formatting or known alias
+382,ORD-1193,status,COMPLETED,Completed,normalized formatting or known alias
+384,ORD-1322,region,W,West,normalized formatting or known alias
+384,ORD-1322,unit_price,199.0,199.00,normalized formatting or known alias
+386,ORD-1403,order_date,"May 28, 2025",2025-05-28,normalized formatting or known alias
+386,ORD-1403,region,W,West,normalized formatting or known alias
+386,ORD-1403,status,Completed ,Completed,normalized formatting or known alias
+387,ORD-1296,status,COMPLETED,Completed,normalized formatting or known alias
+388,ORD-1073,order_date,04/08/2025,2025-04-08,normalized formatting or known alias
+388,ORD-1073,region,NE,Northeast,normalized formatting or known alias
+388,ORD-1073,unit_price,19.5,19.50,normalized formatting or known alias
+389,ORD-1251,product,LUMEN DESK LAMP,Lumen Desk Lamp,normalized formatting or known alias
+390,ORD-1202,order_date,06/14/2025,2025-06-14,normalized formatting or known alias
+390,ORD-1202,region,southeast,Southeast,normalized formatting or known alias
+391,ORD-1347,region,WEST,West,normalized formatting or known alias
+391,ORD-1347,product,LAPTOP SLEEVE,Laptop Sleeve,normalized formatting or known alias
+391,ORD-1347,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+392,ORD-1127,unit_price,19.5,19.50,normalized formatting or known alias
+393,ORD-1165,order_date,04/21/2025,2025-04-21,normalized formatting or known alias
+394,ORD-1365,region,W,West,normalized formatting or known alias
+394,ORD-1365,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+395,ORD-1075,region,NE,Northeast,normalized formatting or known alias
+396,ORD-1128,region,SOUTHEAST,Southeast,normalized formatting or known alias
+396,ORD-1128,unit_price,$89.99,89.99,normalized formatting or known alias
+396,ORD-1128,discount_pct,10,1E+1,normalized formatting or known alias
+397,ORD-1068,region,North East,Northeast,normalized formatting or known alias
+397,ORD-1068,unit_price,79.0,79.00,normalized formatting or known alias
+397,ORD-1068,discount_pct,10,1E+1,normalized formatting or known alias
+398,ORD-1360,status,Completed ,Completed,normalized formatting or known alias
+399,ORD-1065,region,northeast,Northeast,normalized formatting or known alias
+399,ORD-1065,unit_price,79.0,79.00,normalized formatting or known alias
+400,ORD-1182,unit_price,79.0,79.00,normalized formatting or known alias
+400,ORD-1182,status,COMPLETED,Completed,normalized formatting or known alias
+401,ORD-1336,order_date,01/22/2025,2025-01-22,normalized formatting or known alias
+401,ORD-1336,sales_rep, Chris Vega ,Chris Vega,normalized formatting or known alias
+402,ORD-1142,order_date,03/24/2025,2025-03-24,normalized formatting or known alias
+402,ORD-1142,region,SE,Southeast,normalized formatting or known alias
+402,ORD-1142,product,ZEPHYR HEADPHONES,Zephyr Headphones,normalized formatting or known alias
+403,ORD-1396,order_date,04/12/2025,2025-04-12,normalized formatting or known alias
+403,ORD-1396,region,west,West,normalized formatting or known alias
+403,ORD-1396,discount_pct,10,1E+1,normalized formatting or known alias
+404,ORD-1211,region,SE,Southeast,normalized formatting or known alias
+404,ORD-1211,product,PULSE SMARTWATCH,Pulse Smartwatch,normalized formatting or known alias
+404,ORD-1211,unit_price,$199.00,199.00,normalized formatting or known alias
+405,ORD-1232,product,ZEPHYR HEADPHONES,Zephyr Headphones,normalized formatting or known alias
+406,ORD-1070,unit_price,19.5,19.50,normalized formatting or known alias
+407,ORD-1049,discount_pct,10,1E+1,normalized formatting or known alias
+407,ORD-1049,status,RETURNED,Returned,normalized formatting or known alias
+408,ORD-1348,unit_price,19.5,19.50,normalized formatting or known alias
+408,ORD-1348,status,Completed ,Completed,normalized formatting or known alias
+409,ORD-1264,order_date,03/07/2025,2025-03-07,normalized formatting or known alias
+410,ORD-1137,order_date,03/19/2025,2025-03-19,normalized formatting or known alias
+410,ORD-1137,region,South East,Southeast,normalized formatting or known alias
+410,ORD-1137,unit_price,59.5,59.50,normalized formatting or known alias
+411,ORD-1294,region,MW,Midwest,normalized formatting or known alias
+412,ORD-1149,unit_price,199.0,199.00,normalized formatting or known alias
+413,ORD-1150,order_date,"Apr 9, 2025",2025-04-09,normalized formatting or known alias
+413,ORD-1150,unit_price,59.5,59.50,normalized formatting or known alias
+414,ORD-1361,unit_price,199.0,199.00,normalized formatting or known alias
+414,ORD-1361,discount_pct,10,1E+1,normalized formatting or known alias
+415,ORD-1166,unit_price,19.5,19.50,normalized formatting or known alias
+415,ORD-1166,status,Completed ,Completed,normalized formatting or known alias
+416,ORD-1087,order_date,05/29/2025,2025-05-29,normalized formatting or known alias
+416,ORD-1087,unit_price,199.0,199.00,normalized formatting or known alias
+417,ORD-1276,order_date,"Apr 26, 2025",2025-04-26,normalized formatting or known alias
+418,ORD-1306,order_date,"Jun 30, 2025",2025-06-30,normalized formatting or known alias
+418,ORD-1306,unit_price,59.5,59.50,normalized formatting or known alias
+420,ORD-1273,region,MIDWEST,Midwest,normalized formatting or known alias
+420,ORD-1273,unit_price,199.0,199.00,normalized formatting or known alias
+420,ORD-1273,discount_pct,10,1E+1,normalized formatting or known alias
+420,ORD-1273,status,Completed ,Completed,normalized formatting or known alias
+421,ORD-1406,region,W,West,normalized formatting or known alias
+421,ORD-1406,unit_price,$79.00,79.00,normalized formatting or known alias
+422,ORD-1292,region,Mid-West,Midwest,normalized formatting or known alias
+422,ORD-1292,discount_pct,10,1E+1,normalized formatting or known alias
+423,ORD-1031,region,northeast,Northeast,normalized formatting or known alias
+423,ORD-1031,unit_price,59.5,59.50,normalized formatting or known alias
+424,ORD-1412,order_date,"May 17, 2025",2025-05-17,normalized formatting or known alias
+424,ORD-1412,discount_pct,10,1E+1,normalized formatting or known alias
+425,ORD-1213,region,southeast,Southeast,normalized formatting or known alias
+425,ORD-1213,sales_rep,LEE WATKINS,Lee Watkins,normalized formatting or known alias
+426,ORD-1106,order_date,06/23/2025,2025-06-23,normalized formatting or known alias
+426,ORD-1106,region,NE,Northeast,normalized formatting or known alias
+426,ORD-1106,unit_price,79.0,79.00,normalized formatting or known alias
+426,ORD-1106,status,COMPLETED,Completed,normalized formatting or known alias
+427,ORD-1072,unit_price,$24.99,24.99,normalized formatting or known alias
+427,ORD-1072,discount_pct,10,1E+1,normalized formatting or known alias
+427,ORD-1072,sales_rep, Priya Shah ,Priya Shah,normalized formatting or known alias
+428,ORD-1316,region,W,West,normalized formatting or known alias
+429,ORD-1085,order_date,05/20/2025,2025-05-20,normalized formatting or known alias
+429,ORD-1085,region,northeast,Northeast,normalized formatting or known alias
+429,ORD-1085,unit_price,19.5,19.50,normalized formatting or known alias
+429,ORD-1085,status,Completed ,Completed,normalized formatting or known alias
+430,ORD-1220,unit_price,$89.99,89.99,normalized formatting or known alias
+432,ORD-1313,region,W,West,normalized formatting or known alias
+433,ORD-1364,region,West ,West,normalized formatting or known alias
+433,ORD-1364,discount_pct,10,1E+1,normalized formatting or known alias
+434,ORD-1153,order_date,04/10/2025,2025-04-10,normalized formatting or known alias
+434,ORD-1153,unit_price,59.5,59.50,normalized formatting or known alias
+435,ORD-1180,region,SE,Southeast,normalized formatting or known alias
+435,ORD-1180,status,Completed ,Completed,normalized formatting or known alias
+436,ORD-1353,region,W,West,normalized formatting or known alias
+436,ORD-1353,status,completed,Completed,normalized formatting or known alias
+437,ORD-1302,order_date,"Jun 9, 2025",2025-06-09,normalized formatting or known alias
+438,ORD-1253,unit_price,79.0,79.00,normalized formatting or known alias
+439,ORD-1378,product,BREWMASTER COFFEE MAKER,Brewmaster Coffee Maker,normalized formatting or known alias
+439,ORD-1378,unit_price,79.0,79.00,normalized formatting or known alias
+439,ORD-1378,status,COMPLETED,Completed,normalized formatting or known alias
+440,ORD-1108,region,North East,Northeast,normalized formatting or known alias
+440,ORD-1108,unit_price,59.5,59.50,normalized formatting or known alias
+440,ORD-1108,sales_rep, Marcus Bell ,Marcus Bell,normalized formatting or known alias
+441,ORD-1122,order_date,02/24/2025,2025-02-24,normalized formatting or known alias
+441,ORD-1122,status,COMPLETED,Completed,normalized formatting or known alias
+442,ORD-1398,discount_pct,10,1E+1,normalized formatting or known alias
+443,ORD-1095,region,northeast,Northeast,normalized formatting or known alias
+443,ORD-1095,unit_price,79.0,79.00,normalized formatting or known alias
+444,ORD-1061,order_date,04/11/2025,2025-04-11,normalized formatting or known alias
+444,ORD-1061,unit_price,19.5,19.50,normalized formatting or known alias
+445,ORD-1225,unit_price,19.5,19.50,normalized formatting or known alias
+445,ORD-1225,status,completed,Completed,normalized formatting or known alias
+446,ORD-1045,status,Completed ,Completed,normalized formatting or known alias
+447,ORD-1179,order_date,"May 17, 2025",2025-05-17,normalized formatting or known alias
+447,ORD-1179,sales_rep, Dana Ortiz ,Dana Ortiz,normalized formatting or known alias
+448,ORD-1135,order_date,03/29/2025,2025-03-29,normalized formatting or known alias
+448,ORD-1135,unit_price,199.0,199.00,normalized formatting or known alias
+449,ORD-1231,sales_rep, Jo Brennan ,Jo Brennan,normalized formatting or known alias
+450,ORD-1017,order_date,"Jan 14, 2025",2025-01-14,normalized formatting or known alias
+450,ORD-1017,unit_price,199.0,199.00,normalized formatting or known alias
+450,ORD-1017,status,completed,Completed,normalized formatting or known alias
+451,ORD-1153,order_date,04/10/2025,2025-04-10,normalized formatting or known alias
+451,ORD-1153,unit_price,59.5,59.50,normalized formatting or known alias
+92,ORD-1188,order_id,ORD-1188,ORD-1188,"merged into source row 76; source rows 76,92"
+168,ORD-1419,order_id,ORD-1419,ORD-1419,"merged into source row 90; source rows 90,168"
+195,ORD-1016,order_id,ORD-1016,ORD-1016,"merged into source row 166; source rows 166,195"
+215,ORD-1004,order_id,ORD-1004,ORD-1004,"merged into source row 70; source rows 70,215"
+218,ORD-1222,order_id,ORD-1222,ORD-1222,"merged into source row 146; source rows 146,218"
+231,ORD-1076,order_id,ORD-1076,ORD-1076,"merged into source row 170; source rows 170,231"
+270,ORD-1158,order_id,ORD-1158,ORD-1158,"merged into source row 182; source rows 182,270"
+276,ORD-1395,order_id,ORD-1395,ORD-1395,"merged into source row 110; source rows 110,276"
+297,ORD-1217,order_id,ORD-1217,ORD-1217,"merged into source row 84; source rows 84,297"
+305,ORD-1342,order_id,ORD-1342,ORD-1342,"merged into source row 249; source rows 249,305"
+328,ORD-1155,order_id,ORD-1155,ORD-1155,"merged into source row 306; source rows 306,328"
+337,ORD-1091,order_id,ORD-1091,ORD-1091,"merged into source row 36; source rows 36,337"
+344,ORD-1176,order_id,ORD-1176,ORD-1176,"merged into source row 310; source rows 310,344"
+350,ORD-1098,order_id,ORD-1098,ORD-1098,"merged into source row 55; source rows 55,350"
+351,ORD-1173,order_id,ORD-1173,ORD-1173,"merged into source row 68; source rows 68,351"
+354,ORD-1356,order_id,ORD-1356,ORD-1356,"merged into source row 236; source rows 236,354"
+358,ORD-1007,order_id,ORD-1007,ORD-1007,"merged into source row 243; source rows 243,358"
+376,ORD-1305,order_id,ORD-1305,ORD-1305,"merged into source row 248; source rows 248,376"
+383,ORD-1213,order_id,ORD-1213,ORD-1213,"merged into source row 3; source rows 3,383"
+399,ORD-1065,order_id,ORD-1065,ORD-1065,"merged into source row 44; source rows 44,399"
+400,ORD-1182,order_id,ORD-1182,ORD-1182,"merged into source row 29; source rows 29,400"
+404,ORD-1211,order_id,ORD-1211,ORD-1211,"merged into source row 132; source rows 132,404"
+405,ORD-1232,order_id,ORD-1232,ORD-1232,"merged into source row 381; source rows 381,405"
+412,ORD-1149,order_id,ORD-1149,ORD-1149,"merged into source row 136; source rows 136,412"
+418,ORD-1306,order_id,ORD-1306,ORD-1306,"merged into source row 340; source rows 340,418"
+425,ORD-1213,order_id,ORD-1213,ORD-1213,"merged into source row 3; source rows 3,383,425"
+438,ORD-1253,order_id,ORD-1253,ORD-1253,"merged into source row 17; source rows 17,438"
+443,ORD-1095,order_id,ORD-1095,ORD-1095,"merged into source row 104; source rows 104,443"
+448,ORD-1135,order_id,ORD-1135,ORD-1135,"merged into source row 58; source rows 58,448"
+451,ORD-1153,order_id,ORD-1153,ORD-1153,"merged into source row 434; source rows 434,451"
+8,ORD-1219,status,Complete,Complete,"unrecognized status; retained, verify source"
+10,ORD-1261,unit_price,,,missing value; left blank for review
+20,ORD-1174,customer_id,,,missing value; left blank for review
+28,ORD-1028,status,Complete,Complete,"unrecognized status; retained, verify source"
+35,ORD-1097,status,Complete,Complete,"unrecognized status; retained, verify source"
+41,ORD-1370,quantity,,,missing value; left blank for review
+53,ORD-1013,status,Complete,Complete,"unrecognized status; retained, verify source"
+79,ORD-1181,status,Return,Return,"unrecognized status; retained, verify source"
+80,ORD-1105,unit_price,,,missing value; left blank for review
+81,ORD-1114,customer_id,,,missing value; left blank for review
+84,ORD-1217,customer_id,,,missing value; left blank for review
+90,ORD-1419,quantity,,,missing value; left blank for review
+114,ORD-1163,unit_price,,,missing value; left blank for review
+126,ORD-1178,status,Complete,Complete,"unrecognized status; retained, verify source"
+127,ORD-1092,customer_id,,,missing value; left blank for review
+136,ORD-1149,status,Complete,Complete,"unrecognized status; retained, verify source"
+146,ORD-1222,unit_price,,,missing value; left blank for review
+148,ORD-1089,unit_price,,,missing value; left blank for review
+151,ORD-1003,status,Complete,Complete,"unrecognized status; retained, verify source"
+153,ORD-1381,customer_id,,,missing value; left blank for review
+156,ORD-1314,quantity,,,missing value; left blank for review
+161,ORD-1255,customer_id,,,missing value; left blank for review
+170,ORD-1076,unit_price,,,missing value; left blank for review
+170,ORD-1076,status,Complete,Complete,"unrecognized status; retained, verify source"
+178,ORD-1080,unit_price,,,missing value; left blank for review
+185,ORD-1205,quantity,999,999,"out of review range 1..100; retained, verify source"
+189,ORD-1107,quantity,,,missing value; left blank for review
+193,ORD-1130,unit_price,,,missing value; left blank for review
+200,ORD-1018,customer_id,,,missing value; left blank for review
+200,ORD-1018,unit_price,,,missing value; left blank for review
+204,ORD-1121,status,Complete,Complete,"unrecognized status; retained, verify source"
+206,ORD-1175,customer_id,,,missing value; left blank for review
+230,ORD-1239,unit_price,,,missing value; left blank for review
+232,ORD-1101,unit_price,,,missing value; left blank for review
+232,ORD-1101,quantity,-3,-3,"out of review range 1..100; retained, verify source"
+237,ORD-1133,status,Complete,Complete,"unrecognized status; retained, verify source"
+239,ORD-1259,quantity,,,missing value; left blank for review
+239,ORD-1259,status,Complete,Complete,"unrecognized status; retained, verify source"
+240,ORD-1169,status,Complete,Complete,"unrecognized status; retained, verify source"
+241,ORD-1328,customer_id,,,missing value; left blank for review
+241,ORD-1328,status,Complete,Complete,"unrecognized status; retained, verify source"
+243,ORD-1007,quantity,,,missing value; left blank for review
+244,ORD-1177,status,Return,Return,"unrecognized status; retained, verify source"
+250,ORD-1270,unit_price,,,missing value; left blank for review
+250,ORD-1270,status,Complete,Complete,"unrecognized status; retained, verify source"
+252,ORD-1241,status,Complete,Complete,"unrecognized status; retained, verify source"
+258,ORD-1299,status,Complete,Complete,"unrecognized status; retained, verify source"
+263,ORD-1187,customer_id,,,missing value; left blank for review
+264,ORD-1151,customer_id,,,missing value; left blank for review
+264,ORD-1151,unit_price,,,missing value; left blank for review
+265,ORD-1032,status,Complete,Complete,"unrecognized status; retained, verify source"
+266,ORD-1357,customer_id,,,missing value; left blank for review
+273,ORD-1227,quantity,,,missing value; left blank for review
+275,ORD-1078,customer_id,,,missing value; left blank for review
+278,ORD-1315,status,Complete,Complete,"unrecognized status; retained, verify source"
+280,ORD-1284,customer_id,,,missing value; left blank for review
+281,ORD-1036,unit_price,,,missing value; left blank for review
+285,ORD-1071,quantity,,,missing value; left blank for review
+292,ORD-1197,unit_price,,,missing value; left blank for review
+303,ORD-1266,status,Complete,Complete,"unrecognized status; retained, verify source"
+310,ORD-1176,status,Return,Return,"unrecognized status; retained, verify source"
+314,ORD-1047,customer_id,,,missing value; left blank for review
+315,ORD-1312,customer_id,,,missing value; left blank for review
+320,ORD-1401,status,Complete,Complete,"unrecognized status; retained, verify source"
+325,ORD-1343,status,Canceled,Canceled,"unrecognized status; retained, verify source"
+332,ORD-1001,unit_price,,,missing value; left blank for review
+334,ORD-1226,status,Complete,Complete,"unrecognized status; retained, verify source"
+335,ORD-1081,customer_id,,,missing value; left blank for review
+340,ORD-1306,quantity,,,missing value; left blank for review
+347,ORD-1067,customer_id,,,missing value; left blank for review
+348,ORD-1362,quantity,,,missing value; left blank for review
+365,ORD-1326,customer_id,,,missing value; left blank for review
+372,ORD-1233,status,Complete,Complete,"unrecognized status; retained, verify source"
+374,ORD-1143,quantity,,,missing value; left blank for review
+388,ORD-1073,status,Complete,Complete,"unrecognized status; retained, verify source"
+393,ORD-1165,quantity,500,500,"out of review range 1..100; retained, verify source"
+395,ORD-1075,unit_price,,,missing value; left blank for review
+413,ORD-1150,quantity,,,missing value; left blank for review
+414,ORD-1361,status,Complete,Complete,"unrecognized status; retained, verify source"
+417,ORD-1276,unit_price,,,missing value; left blank for review
+420,ORD-1273,customer_id,,,missing value; left blank for review
+424,ORD-1412,unit_price,,,missing value; left blank for review
+428,ORD-1316,status,Complete,Complete,"unrecognized status; retained, verify source"
+442,ORD-1398,unit_price,,,missing value; left blank for review
