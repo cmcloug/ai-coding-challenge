@@ -92,7 +92,7 @@ def normalize(field, raw, spellings):
         if field == "quantity":
             return str(int(value)) if value == value.to_integral_value() else s
         if field == "unit_price":
-            return f"{value:.3f}"
+            return f"{value:.2f}"
         if field == "discount_pct":
             return str(int(value.quantize(Decimal("1"), rounding=ROUND_HALF_UP)))
         return str(value.normalize())
