@@ -114,6 +114,19 @@ def main():
                                   parse_decimal(row["discount_pct"]) is None))
     unusual_qty = [(row, parse_decimal(row["quantity"])) for row in h1]
     unusual_qty = [(r, q) for r, q in unusual_qty if q is not None and (q < 1 or q > 100)]
+    outlier_indices = {idx for idx, row in enumerate(h1)
+                       if (q := parse_decimal(row["quantity"])) is not None and (q < 1 or q > 100)}
+    outlier_revenue = sum((value for idx, value in revenue_by_row.items() if idx in outlier_indices), ZERO)
+
+    def revenue_excluding_outliers(field):
+        totals = defaultdict(lambda: ZERO)
+        for idx, row in enumerate(h1):
+            if idx in revenue_by_row and idx not in outlier_indices:
+                totals[row[field] or "(Missing)"] += revenue_by_row[idx]
+        return sorted(totals.items(), key=lambda item: (-item[1], item[0]))
+
+    regions_without_outliers = revenue_excluding_outliers("region")
+    products_without_outliers = revenue_excluding_outliers("product")
 
     output_dir.mkdir(parents=True, exist_ok=True)
     write_summary(output_dir / "brightcart_region_summary.csv", [{k:v for k,v in r.items() if not k.startswith("_")} for r in regions], "region")
@@ -143,6 +156,10 @@ def main():
     if top_product:
         report.append(f"2. **{top_product['product']} was the top product by revenue**, generating {money(top_product['_revenue'])} "
                       f"({pct(Decimal(top_product['revenue_share_pct']))} of total) from {top_product['completed_orders']} completed orders.")
+    if regions_without_outliers and products_without_outliers:
+        report.append(f"**Sensitivity check:** excluding quantities below 1 or above 100, **{regions_without_outliers[0][0]}** leads regional revenue "
+                      f"({money(regions_without_outliers[0][1])}) and **{products_without_outliers[0][0]}** leads product revenue "
+                      f"({money(products_without_outliers[0][1])}). Treat the all-row leaders above as provisional until the flagged quantities are verified.")
     if highest_returns:
         report.append(f"3. **{highest_returns['product']} had the highest product return rate among products with at least five completed/returned orders**: "
                       f"{pct(highest_returns['_return_rate'])} ({highest_returns['returned_orders']} returned of {highest_returns['_eligible']} completed or returned orders). "
@@ -154,15 +171,20 @@ def main():
                "*Return rate = Returned / (Completed + Returned); Cancelled orders are excluded. Revenue includes only Completed rows with parseable quantity, unit price, and discount.*", "",
                "## Recommendation", ""]
     if top_region and top_product:
-        report.append(f"Prioritize inventory and campaign review for **{top_region['region']}**, led by **{top_product['product']}** nationally. "
-                      "Before expanding spend, check the product and region return rates and confirm inventory availability; investigate any elevated return signal in the tables.")
+        if regions_without_outliers and (regions_without_outliers[0][0] != top_region["region"] or
+                                         products_without_outliers[0][0] != top_product["product"]):
+            report.append(f"First verify the unusual quantities behind {money(outlier_revenue)} in completed revenue. The apparent leaders change when those records are excluded. "
+                          f"If source records confirm them, prioritize **{top_region['region']}** and **{top_product['product']}**; otherwise use the sensitivity results ({regions_without_outliers[0][0]} region and {products_without_outliers[0][0]} product) to guide next-quarter planning. Review the high Zephyr Headphones return rate before increasing its promotion.")
+        else:
+            report.append(f"Prioritize inventory and campaign review for **{top_region['region']}**, led by **{top_product['product']}** nationally. "
+                          "Before expanding spend, verify unusual quantities, check return rates, and confirm inventory availability.")
     else:
         report.append("Review the regional and product summaries before setting next-quarter priorities; the source does not provide enough valid H1 revenue data for a supported ranking.")
     report += ["", "## Data cautions", "",
                f"- {len(all_rows)} cleaned rows were read; {len(h1)} fall in H1 2025. {invalid_dates} rows had dates that could not be parsed and were excluded from date-based analysis.",
                f"- {missing_customers} H1 rows have no customer ID ({completed_missing_customer} are Completed), limiting customer-level follow-up.",
                f"- {missing_revenue_inputs} Completed H1 orders lack parseable quantity, price, or discount and are excluded from revenue; {revenue_inputs_missing} counted during revenue calculation.",
-               f"- {len(unusual_qty)} H1 rows have quantity below 1 or above 100. These values were retained and included where Completed and parseable, so validate them before acting on revenue rankings.",
+               f"- {len(unusual_qty)} H1 rows have quantity below 1 or above 100. Their Completed rows contribute {money(outlier_revenue)} ({pct(100 * outlier_revenue / total_revenue if total_revenue else ZERO)}) to reported revenue; the two largest are 999 Lumen Desk Lamps in the Southeast and 500 Laptop Sleeves in the Southeast. Values were retained, so validate these records before acting on rankings.",
                f"- There are {status_counts['Returned']} Returned orders and {status_counts['Cancelled']} Cancelled orders among {len(h1)} H1 rows. Overall return rate is {pct(overall_return_rate)} across {return_denominator} Completed or Returned orders.",
                "- Duplicate order IDs were merged by the cleaning script. Blank fields were filled from duplicate rows; conflicts, if any, use the first row's value and are documented in the cleaning audit.",
                "", "## Reproducible outputs", "",
