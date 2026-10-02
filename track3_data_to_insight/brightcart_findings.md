@@ -38,7 +38,7 @@ First verify the unusual quantities behind $47,700.76 in completed revenue. The 
 ## Data cautions
 
 - 420 cleaned rows were read; 420 fall in H1 2025. 0 rows had dates that could not be parsed and were excluded from date-based analysis.
-- 20 H1 rows have no customer ID (16 are Completed), limiting customer-level follow-up.
+- 20 H1 rows have no customer ID (16 are Completed). These rows were still included in regional/product, revenue, and return insights whenever the other required fields were present; missing customer IDs only prevent customer-level analysis and follow-up.
 - 23 Completed H1 orders lack parseable quantity, price, or discount and are excluded from revenue; 23 counted during revenue calculation.
 - 3 H1 rows have quantity below 1 or above 100. Their Completed rows contribute $47,700.76 (60.4%) to reported revenue; the two largest are 999 Lumen Desk Lamps in the Southeast and 500 Laptop Sleeves in the Southeast. Values were retained, so validate these records before acting on rankings.
 - There are 38 Returned orders and 22 Cancelled orders among 420 H1 rows. Overall return rate is 10.3% across 369 Completed or Returned orders.

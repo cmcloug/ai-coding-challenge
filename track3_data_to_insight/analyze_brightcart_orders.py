@@ -182,7 +182,7 @@ def main():
         report.append("Review the regional and product summaries before setting next-quarter priorities; the source does not provide enough valid H1 revenue data for a supported ranking.")
     report += ["", "## Data cautions", "",
                f"- {len(all_rows)} cleaned rows were read; {len(h1)} fall in H1 2025. {invalid_dates} rows had dates that could not be parsed and were excluded from date-based analysis.",
-               f"- {missing_customers} H1 rows have no customer ID ({completed_missing_customer} are Completed), limiting customer-level follow-up.",
+               f"- {missing_customers} H1 rows have no customer ID ({completed_missing_customer} are Completed). These rows were still included in regional/product, revenue, and return insights whenever the other required fields were present; missing customer IDs only prevent customer-level analysis and follow-up.",
                f"- {missing_revenue_inputs} Completed H1 orders lack parseable quantity, price, or discount and are excluded from revenue; {revenue_inputs_missing} counted during revenue calculation.",
                f"- {len(unusual_qty)} H1 rows have quantity below 1 or above 100. Their Completed rows contribute {money(outlier_revenue)} ({pct(100 * outlier_revenue / total_revenue if total_revenue else ZERO)}) to reported revenue; the two largest are 999 Lumen Desk Lamps in the Southeast and 500 Laptop Sleeves in the Southeast. Values were retained, so validate these records before acting on rankings.",
                f"- There are {status_counts['Returned']} Returned orders and {status_counts['Cancelled']} Cancelled orders among {len(h1)} H1 rows. Overall return rate is {pct(overall_return_rate)} across {return_denominator} Completed or Returned orders.",
