@@ -33,6 +33,21 @@ Revenue = quantity × unit price × (1 − discount / 100), for Completed orders
 | Trail Water Bottle | 45 | 38 | $1,120.28 | 1.4% | 45 | 38 | $1,120.28 | 3.6% |
 | USB-C Cable 3-pack | 51 | 41 | $977.35 | 1.2% | 51 | 41 | $977.35 | 3.1% |
 
+## Customer summary (top 10 by completed revenue)
+
+| Customer ID | Orders incl. >10 | Revenue incl. >10 | Orders excl. >10 | Revenue excl. >10 |
+|---|---:|---:|---:|---:|
+| C1111 | 1 | $34,955.01 | 0 | $0.00 |
+| C1016 | 2 | $12,758.49 | 1 | $12.74 |
+| C1138 | 3 | $1,313.40 | 3 | $1,313.40 |
+| C1089 | 3 | $902.97 | 3 | $902.97 |
+| C1118 | 4 | $761.49 | 4 | $761.49 |
+| C1180 | 3 | $624.62 | 3 | $624.62 |
+| C1162 | 5 | $620.49 | 5 | $620.49 |
+| C1105 | 5 | $528.01 | 5 | $528.01 |
+| C1164 | 5 | $520.98 | 5 | $520.98 |
+| C1190 | 2 | $516.20 | 2 | $516.20 |
+
 Orders with negative quantities are excluded from all summaries. `Incl. >10` includes orders with more than 10 units; `excl. >10` removes them. Revenue includes only Completed orders with parseable inputs. Return rate = Returned / (Completed + Returned); Cancelled orders are excluded.
 
 ## Recommendation
@@ -44,11 +59,11 @@ Verify the >10-unit orders, which account for $47,700.76 in completed revenue. T
 - 420 cleaned rows were read; 420 fall in H1 2025. 0 rows had dates that could not be parsed and were excluded from date-based analysis.
 - 1 H1 row(s) have negative quantities and were excluded from all insight calculations: ORD-1101 (-3 units).
 - 2 H1 row(s) have quantities greater than 10 and are shown in both scenarios. Together, their Completed orders contribute $47,700.76 when included: ORD-1205 (999 × Lumen Desk Lamp, Southeast), ORD-1165 (500 × Laptop Sleeve, Southeast).
-- 20 H1 nonnegative-quantity rows have no customer ID (16 are Completed). These rows are included in regional/product, revenue, and return insights whenever the other required fields are present; missing customer IDs only prevent customer-level analysis and follow-up.
+- 20 H1 nonnegative-quantity rows have no customer ID (16 are Completed). These rows are included in regional/product, revenue, and return insights whenever the other required fields are present, but are not combined into a single customer group. Customer IDs group orders for the customer summary; orders remain separate transactions.
 - 22 Completed H1 orders lack parseable quantity, price, or discount and are excluded from revenue; 22 counted during revenue calculation.
 - There are 38 Returned orders and 22 Cancelled orders among 419 included H1 rows. Overall return rate is 10.3% across 368 Completed or Returned orders.
 - Duplicate order IDs were merged by the cleaning script. Blank fields were filled from duplicate rows; conflicts, if any, use the first row's value and are documented in the cleaning audit.
 
 ## Reproducible outputs
 
-This script also writes `brightcart_region_summary.csv` and `brightcart_product_summary.csv`; each compares results with and without >10-unit orders.
+This script also writes region and product summaries that compare results with and without >10-unit orders, plus `brightcart_customer_summary.csv` with orders grouped by known customer ID. Customer IDs are grouping keys, not deduplication keys.

@@ -91,6 +91,11 @@ def main():
             qty = parse_decimal(row["quantity"])
             if exclude_large and qty is not None and qty > 10:
                 continue
+            # A blank customer ID does not identify a customer. Keep those
+            # transactions in region/product summaries, but do not make one
+            # artificial customer group out of all unidentified orders.
+            if field == "customer_id" and not row["customer_id"]:
+                continue
             key = row[field] or "(Missing)"
             group = groups[key]
             group["orders"] += 1
@@ -116,6 +121,7 @@ def main():
 
     regions, products = summarize("region"), summarize("product")
     regions_no_large, products_no_large = summarize("region", True), summarize("product", True)
+    customers, customers_no_large = summarize("customer_id"), summarize("customer_id", True)
     total_revenue = sum(revenue_by_row.values(), ZERO)
     status_counts = Counter(row["status"] for row in insight_rows)
     return_denominator = status_counts["Completed"] + status_counts["Returned"]
@@ -152,8 +158,10 @@ def main():
 
     region_comparison = comparative_summary(regions, regions_no_large, "region")
     product_comparison = comparative_summary(products, products_no_large, "product")
+    customer_comparison = comparative_summary(customers, customers_no_large, "customer_id")
     for filename, rows, key in (("brightcart_region_summary.csv", region_comparison, "region"),
-                                ("brightcart_product_summary.csv", product_comparison, "product")):
+                                ("brightcart_product_summary.csv", product_comparison, "product"),
+                                ("brightcart_customer_summary.csv", customer_comparison, "customer_id")):
         with (output_dir / filename).open("w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else [key])
             writer.writeheader()
@@ -182,6 +190,16 @@ def main():
                          f"{money(exc['_revenue'])} | {pct(Decimal(exc['revenue_share_pct']))} |")
         return "\n".join(lines)
 
+    def customer_table(rows_in, rows_out, limit=10):
+        excluded = {r["customer_id"]: r for r in rows_out}
+        lines = ["| Customer ID | Orders incl. >10 | Revenue incl. >10 | Orders excl. >10 | Revenue excl. >10 |",
+                 "|---|---:|---:|---:|---:|"]
+        for inc in rows_in[:limit]:
+            exc = excluded.get(inc["customer_id"], {"orders": 0, "_revenue": ZERO})
+            lines.append(f"| {inc['customer_id']} | {inc['orders']} | {money(inc['_revenue'])} | "
+                         f"{exc['orders']} | {money(exc['_revenue'])} |")
+        return "\n".join(lines)
+
     top_region = regions[0] if regions else None
     top_product = products[0] if products else None
     highest_returns = max((r for r in products_no_large if r["_eligible"] >= 5),
@@ -208,6 +226,7 @@ def main():
         report.append("3. No product had at least five completed/returned orders, so product return-rate comparisons are too thin to rank reliably.")
     report += ["", "## Regional summary", "", comparison_table(regions, regions_no_large, "region"), "",
                "## Product summary", "", comparison_table(products, products_no_large, "product"), "",
+               "## Customer summary (top 10 by completed revenue)", "", customer_table(customers, customers_no_large), "",
                "Orders with negative quantities are excluded from all summaries. `Incl. >10` includes orders with more than 10 units; `excl. >10` removes them. Revenue includes only Completed orders with parseable inputs. Return rate = Returned / (Completed + Returned); Cancelled orders are excluded.", "",
                "## Recommendation", ""]
     if top_region and top_product:
@@ -223,18 +242,19 @@ def main():
                f"- {len(all_rows)} cleaned rows were read; {len(h1)} fall in H1 2025. {invalid_dates} rows had dates that could not be parsed and were excluded from date-based analysis.",
                f"- {len(negative_rows)} H1 row(s) have negative quantities and were excluded from all insight calculations: " + (", ".join(f"{r['order_id']} ({q} units)" for r, q in negative_rows) or "none") + ".",
                f"- {len(large_rows)} H1 row(s) have quantities greater than 10 and are shown in both scenarios. Together, their Completed orders contribute {money(large_revenue)} when included: " + (", ".join(f"{r['order_id']} ({q} × {r['product']}, {r['region']})" for _, r, q in large_rows) or "none") + ".",
-               f"- {missing_customers} H1 nonnegative-quantity rows have no customer ID ({completed_missing_customer} are Completed). These rows are included in regional/product, revenue, and return insights whenever the other required fields are present; missing customer IDs only prevent customer-level analysis and follow-up.",
+               f"- {missing_customers} H1 nonnegative-quantity rows have no customer ID ({completed_missing_customer} are Completed). These rows are included in regional/product, revenue, and return insights whenever the other required fields are present, but are not combined into a single customer group. Customer IDs group orders for the customer summary; orders remain separate transactions.",
                f"- {missing_revenue_inputs} Completed H1 orders lack parseable quantity, price, or discount and are excluded from revenue; {revenue_inputs_missing} counted during revenue calculation.",
                f"- There are {status_counts['Returned']} Returned orders and {status_counts['Cancelled']} Cancelled orders among {len(insight_rows)} included H1 rows. Overall return rate is {pct(overall_return_rate)} across {return_denominator} Completed or Returned orders.",
                "- Duplicate order IDs were merged by the cleaning script. Blank fields were filled from duplicate rows; conflicts, if any, use the first row's value and are documented in the cleaning audit.",
                "", "## Reproducible outputs", "",
-               "This script also writes `brightcart_region_summary.csv` and `brightcart_product_summary.csv`; each compares results with and without >10-unit orders.", ""]
+               "This script also writes region and product summaries that compare results with and without >10-unit orders, plus `brightcart_customer_summary.csv` with orders grouped by known customer ID. Customer IDs are grouping keys, not deduplication keys.", ""]
     report_path = output_dir / "brightcart_findings.md"
     report_path.write_text("\n".join(report), encoding="utf-8")
     print(f"H1 rows: {len(h1)}; negative quantities excluded: {len(negative_rows)}; completed revenue including >10-unit orders: {money(total_revenue)}")
     print(f"Report: {report_path}")
     print(f"Region table: {output_dir / 'brightcart_region_summary.csv'}")
     print(f"Product table: {output_dir / 'brightcart_product_summary.csv'}")
+    print(f"Customer table: {output_dir / 'brightcart_customer_summary.csv'}")
 
 if __name__ == "__main__":
     main()
