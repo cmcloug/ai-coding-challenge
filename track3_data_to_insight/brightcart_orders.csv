@@ -1,0 +1,451 @@
+order_id,customer_id,order_date,region,product,category,quantity,unit_price,discount_pct,status,sales_rep
+ORD-1044,C1171,2025-03-21,Northeast,Nova Webcam,Electronics,1,59.5,0,Completed ,Priya Shah
+ORD-1213,C1023,2025-06-20,Southeast,Zephyr Headphones,Electronics,2,89.99,5,Completed,Lee Watkins
+ORD-1297,C1146,2025-05-31,Midwest,USB-C Cable 3-pack,Accessories,2,14.99,0,Completed, Sam Okafor 
+ORD-1186,C1023,05/14/2025,Southeast,Zephyr Headphones,Electronics,1,89.99,15,completed,Lee Watkins
+ORD-1124,C1044,2025-02-16,Southeast,FlexBand Set,Fitness,1,24.99,5,COMPLETED,Lee Watkins
+ORD-1195,C1094,2025-05-10,South East,Lumen Desk Lamp,Home,2,34.99,10,Completed, Dana Ortiz 
+ORD-1219,C1168,2025-06-30,Southeast,Nova Webcam,Electronics,2,$59.50,0,Complete, Lee Watkins 
+ORD-1058,C1027,2025-04-13,NE,Nova Webcam,Electronics,3,59.5,5,Completed, Priya Shah 
+ORD-1261,C1115,"Mar 6, 2025",midwest,Zephyr Headphones,Electronics,3,,5,COMPLETED,Sam Okafor
+ORD-1383,C1068,03/10/2025,W,Trail Water Bottle,Fitness,1,19.5,0,Completed,Tara Nguyen
+ORD-1329,C1014,2025-01-18,West,FlexBand Set,Fitness,1,24.99,0,COMPLETED, Tara Nguyen 
+ORD-1277,C1040,2025-04-15,Midwest,Lumen Desk Lamp,Home,1,34.99,5,Completed, Sam Okafor 
+ORD-1083,C1076,05/25/2025,NE,Lumen Desk Lamp,Home,1,34.99,5,cancelled,Priya Shah
+ORD-1012,C1142,01/08/2025,NE,Laptop Sleeve,Accessories,2,29.99,0,Completed,Priya Shah
+ORD-1139,C1178,2025-03-08,Southeast,Laptop Sleeve,Accessories,2,$29.99,0,Completed,Lee Watkins
+ORD-1253,C1090,2025-02-20,Midwest,Brewmaster Coffee Maker,Home,4,79.0,0,Returned,Sam Okafor
+ORD-1079,C1073,2025-05-08,Northeast,Nova Webcam,Electronics,1,59.5,0,Completed,Priya Shah
+ORD-1345,C1076,2025-02-13,W,Trail Water Bottle,Fitness,1,19.5,10,Completed, Chris Vega 
+ORD-1174,,2025-05-11,southeast,FlexBand Set,Fitness,2,24.99,10,Completed,Dana Ortiz
+ORD-1309,C1105,06/11/2025,Midwest,Trail Water Bottle,Fitness,2,19.5,0,Completed,Sam Okafor
+ORD-1379,C1113,2025-03-12,west,Zephyr Headphones,Electronics,2,89.99,0,Cancelled,Tara Nguyen
+ORD-1125,C1162,2025-02-27,Southeast,Pulse Smartwatch,Electronics,1,199.0,0,Completed,Lee Watkins
+ORD-1257,C1094,2025-03-12,Midwest,FLEXBAND SET,Fitness,1,24.99,0,Completed,Sam Okafor
+ORD-1275,C1163,04/01/2025,Midwest,USB-C Cable 3-pack,Accessories,1,14.99,15,Completed,Jo Brennan
+ORD-1397,C1165,2025-04-13,West,FLEXBAND SET,Fitness,4,24.99,0,Completed,Chris Vega
+ORD-1359,C1164,2025-02-02,West,Pulse Smartwatch,Electronics,1,199.0,0,Completed,Tara Nguyen
+ORD-1028,C1005,2025-02-19,Northeast,Nova Webcam,Electronics,2,$59.50,10,Complete,Priya Shah
+ORD-1182,C1075,2025-05-15,Southeast,Brewmaster Coffee Maker,Home,1,79.0,5,COMPLETED,Dana Ortiz
+ORD-1077,C1040,2025-05-24,Northeast,USB-C Cable 3-pack,Accessories,3,14.99,5,Completed,Marcus Bell
+ORD-1216,C1063,06/23/2025,Southeast,Lumen Desk Lamp,Home,1,$34.99,5,Completed,Dana Ortiz
+ORD-1355,C1056,"Feb 24, 2025",WEST,Brewmaster Coffee Maker,Home,1,$79.00,0,Returned,Chris Vega
+ORD-1088,C1191,2025-05-18,NORTHEAST,USB-C Cable 3-pack,Accessories,1,$14.99,0,Completed,Priya Shah
+ORD-1283,C1129,2025-04-15,Midwest,Zephyr Headphones,Electronics,4,89.99,0,Cancelled,Jo Brennan
+ORD-1097,C1187,2025-06-17,Northeast,Trail Water Bottle,Fitness,4,19.5,0,Complete,Marcus Bell
+ORD-1091,C1094,2025-05-06,Northeast,Lumen Desk Lamp,Home,2,34.99,15,Completed, Priya Shah 
+ORD-1300,C1096,2025-06-11,Midwest,Laptop Sleeve,Accessories,4,29.99,5,Completed,Jo Brennan
+ORD-1199,C1153,"Jun 2, 2025",SOUTHEAST,Zephyr Headphones,Electronics,1,89.99,0,Completed,Dana Ortiz
+ORD-1390,C1151,2025-04-18,West,Zephyr Headphones,Electronics,1,89.99,10,Completed,Tara Nguyen
+ORD-1350,C1085,"Feb 10, 2025",West,Lumen Desk Lamp,Home,4,34.99,0,Completed, Tara Nguyen 
+ORD-1370,C1071,2025-03-29,WEST,Laptop Sleeve,Accessories,,29.99,15,Completed,Tara Nguyen
+ORD-1148,C1062,2025-04-17,SOUTHEAST,Brewmaster Coffee Maker,Home,1,79.0,15,Completed,Dana Ortiz
+ORD-1224,C1039,2025-06-03,South East,Pulse Smartwatch,Electronics,1,199.0,0,Cancelled,Dana Ortiz
+ORD-1065,C1170,2025-04-30,northeast,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Priya Shah
+ORD-1038,C1073,2025-03-14,Northeast,LAPTOP SLEEVE,Accessories,2,29.99,15,Completed,Marcus Bell
+ORD-1320,C1192,2025-01-09,WEST,Nova Webcam,Electronics,4,59.5,0,COMPLETED,Tara Nguyen
+ORD-1229,C1112,2025-01-15,MW,Brewmaster Coffee Maker,Home,2,79.0,5,Cancelled, Jo Brennan 
+ORD-1215,C1038,"Jun 2, 2025",SE,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Dana Ortiz
+ORD-1160,C1123,2025-04-26,SOUTHEAST,USB-C Cable 3-pack,Accessories,1,$14.99,0,Completed,Dana Ortiz
+ORD-1386,C1101,2025-03-11,West,Zephyr Headphones,Electronics,3,89.99,5,Returned,Chris Vega
+ORD-1278,C1183,2025-04-11,MIDWEST,Brewmaster Coffee Maker,Home,2,79.0,0,Completed,Jo Brennan
+ORD-1060,C1084,2025-04-09,Northeast,Zephyr Headphones,Electronics,3,89.99,0,Returned,Marcus Bell
+ORD-1013,C1102,01/09/2025,Northeast,USB-C Cable 3-pack,Accessories,1,14.99,10,Complete,Marcus Bell
+ORD-1321,C1060,2025-01-02,West,Nova Webcam,Electronics,2,59.5,5,Completed ,Chris Vega
+ORD-1098,C1151,2025-06-09,North East,Lumen Desk Lamp,Home,1,34.99,0,COMPLETED,Priya Shah
+ORD-1152,C1077,04/07/2025,Southeast,Trail Water Bottle,Fitness,4,19.5,5,Completed , Dana Ortiz 
+ORD-1405,C1103,05/21/2025,West,Laptop Sleeve,Accessories,1,29.99,15,COMPLETED, Chris Vega 
+ORD-1135,C1191,03/29/2025,Southeast,Pulse Smartwatch,Electronics,1,199.0,0,Completed,Lee Watkins
+ORD-1194,C1007,05/03/2025,South East,Zephyr Headphones,Electronics,2,89.99,0,Completed,Lee Watkins
+ORD-1123,C1147,2025-02-19,SOUTHEAST,Zephyr Headphones,Electronics,4,89.99,15,Cancelled,Lee Watkins
+ORD-1263,C1182,"Mar 23, 2025",Mid-West,Laptop Sleeve,Accessories,3,29.99,15,Completed, Sam Okafor 
+ORD-1411,C1172,2025-05-05,West,Laptop Sleeve,Accessories,1,29.99,0,Completed, Chris Vega 
+ORD-1086,C1118,05/06/2025,North East,Zephyr Headphones,Electronics,1,89.99,5,Completed ,Marcus Bell
+ORD-1271,C1162,"Mar 31, 2025",midwest,USB-C Cable 3-pack,Accessories,2,14.99,0,Completed, Jo Brennan 
+ORD-1183,C1167,2025-05-21,SE,USB-C Cable 3-pack,Accessories,3,14.99,10,Completed,Dana Ortiz
+ORD-1162,C1093,2025-04-03,southeast,Laptop Sleeve,Accessories,2,$29.99,0,Completed,Lee Watkins
+ORD-1057,C1105,2025-04-26,Northeast,PULSE SMARTWATCH,Electronics,2,199.0,15,Completed ,Priya Shah
+ORD-1173,C1052,2025-05-03,Southeast,Laptop Sleeve,Accessories,3,29.99,10,Completed, Dana Ortiz 
+ORD-1119,C1165,2025-01-05,Southeast,LUMEN DESK LAMP,Home,3,34.99,0,Completed, Dana Ortiz 
+ORD-1004,C1001,2025-01-25,northeast,Pulse Smartwatch,Electronics,3,199.0,15,Completed,MARCUS BELL
+ORD-1052,C1163,03/09/2025,North East,Zephyr Headphones,Electronics,1,89.99,5,Completed,Marcus Bell
+ORD-1369,C1177,2025-03-29,West,Pulse Smartwatch,Electronics,2,199.0,0,Completed,Tara Nguyen
+ORD-1417,C1056,2025-06-10,W,FlexBand Set,Fitness,1,24.99,0,completed,Chris Vega
+ORD-1392,C1104,2025-04-22,West,USB-C Cable 3-pack,Accessories,1,14.99,15,COMPLETED, Chris Vega 
+ORD-1346,C1181,02/05/2025,West,Nova Webcam,Electronics,3,59.5,0,Completed,Chris Vega
+ORD-1188,C1192,2025-05-14,South East,Lumen Desk Lamp,Home,3,34.99,15,completed, Dana Ortiz 
+ORD-1286,C1102,05/02/2025,Midwest,USB-C Cable 3-pack,Accessories,2,14.99,0,Completed,Jo Brennan
+ORD-1374,C1019,03/11/2025,West,Zephyr Headphones,Electronics,2,89.99,10,Completed,Chris Vega
+ORD-1181,C1155,2025-05-05,southeast,ZEPHYR HEADPHONES,Electronics,1,89.99,0,Return,Lee Watkins
+ORD-1105,C1078,2025-06-09,NORTHEAST,Brewmaster Coffee Maker,Home,1,,15,Completed,Priya Shah
+ORD-1114,,2025-01-10,South East,USB-C Cable 3-pack,Accessories,3,$14.99,5,Completed,Lee Watkins
+ORD-1190,C1027,2025-05-12,Southeast,Trail Water Bottle,Fitness,3,$19.50,0,Completed,Dana Ortiz
+ORD-1041,C1047,"Mar 3, 2025",Northeast,Laptop Sleeve,Accessories,2,29.99,15,COMPLETED,Priya Shah
+ORD-1217,,2025-06-14,southeast,Brewmaster Coffee Maker,Home,2,79.0,15,Completed,Dana Ortiz
+ORD-1115,C1189,"Jan 4, 2025",Southeast,FlexBand Set,Fitness,4,24.99,0,Completed, Dana Ortiz 
+ORD-1246,C1051,2025-02-02,MIDWEST,Zephyr Headphones,Electronics,1,89.99,0,Returned,Jo Brennan
+ORD-1159,C1138,"Apr 29, 2025",Southeast,Pulse Smartwatch,Electronics,4,199.0,10,Completed,Lee Watkins
+ORD-1208,C1050,2025-06-06,Southeast,Nova Webcam,Electronics,2,59.5,15,Completed ,Dana Ortiz
+ORD-1054,C1032,2025-03-02,NORTHEAST,FlexBand Set,Fitness,1,24.99,0,completed,Marcus Bell
+ORD-1419,C1139,06/27/2025,west,FlexBand Set,Fitness,,24.99,10,Completed,TARA NGUYEN
+ORD-1240,C1000,"Jan 20, 2025",Midwest,Trail Water Bottle,Fitness,1,19.5,10,completed,Jo Brennan
+ORD-1188,C1192,2025-05-14,South East,Lumen Desk Lamp,Home,3,34.99,15,completed, Dana Ortiz 
+ORD-1385,C1126,2025-03-20,W,Laptop Sleeve,Accessories,2,$29.99,5,Completed,Tara Nguyen
+ORD-1020,C1184,2025-02-24,Northeast,Lumen Desk Lamp,Home,1,34.99,10,Completed,Priya Shah
+ORD-1050,C1162,2025-03-28,Northeast,Trail Water Bottle,Fitness,1,19.5,5,Completed,Marcus Bell
+ORD-1279,C1143,2025-04-04,Midwest,Zephyr Headphones,Electronics,1,89.99,5,Completed,Sam Okafor
+ORD-1413,C1124,2025-06-21,West,FlexBand Set,Fitness,1,24.99,15,completed,Tara Nguyen
+ORD-1268,C1088,2025-03-05,MW,Lumen Desk Lamp,Home,3,34.99,10,completed,Sam Okafor
+ORD-1366,C1057,2025-03-10,West,FlexBand Set,Fitness,2,24.99,0,Cancelled,Tara Nguyen
+ORD-1344,C1164,2025-02-22,West,Zephyr Headphones,Electronics,1,89.99,10,Returned,Chris Vega
+ORD-1006,C1067,01/26/2025,NE,Brewmaster Coffee Maker,Home,1,79.0,5,Completed,Priya Shah
+ORD-1293,C1084,05/22/2025,MW,Lumen Desk Lamp,Home,1,34.99,5,Returned,Jo Brennan
+ORD-1111,C1122,01/04/2025,SOUTHEAST,Laptop Sleeve,Accessories,3,29.99,5,Completed,Lee Watkins
+ORD-1095,C1094,2025-06-03,northeast,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Priya Shah
+ORD-1147,C1007,2025-03-02,SE,Pulse Smartwatch,Electronics,1,199.0,0,Completed,Lee Watkins
+ORD-1145,C1017,"Mar 8, 2025",Southeast,USB-C Cable 3-pack,Accessories,2,$14.99,0,Returned,Dana Ortiz
+ORD-1333,C1114,2025-01-28,WEST,Brewmaster Coffee Maker,Home,3,79.0,5,Completed, Chris Vega 
+ORD-1389,C1083,2025-04-13,West,Laptop Sleeve,Accessories,1,29.99,5,Completed,Chris Vega
+ORD-1126,C1171,02/04/2025,Southeast,Brewmaster Coffee Maker,Home,3,79.0,0,Completed,Lee Watkins
+ORD-1395,C1092,2025-04-23,West,FlexBand Set,Fitness,3,24.99,10,Completed, Tara Nguyen 
+ORD-1214,C1189,2025-06-29,SOUTHEAST,FlexBand Set,Fitness,1,24.99,10,Cancelled,Dana Ortiz
+ORD-1210,C1164,2025-06-21,Southeast,Trail Water Bottle,Fitness,4,19.5,0,Completed,Lee Watkins
+ORD-1416,C1181,2025-06-27,West,Brewmaster Coffee Maker,Home,1,$79.00,0,Completed,Tara Nguyen
+ORD-1163,C1172,04/24/2025,SE,FlexBand Set,Fitness,2,,10,Completed, Lee Watkins 
+ORD-1391,C1181,04/07/2025,West,Laptop Sleeve,Accessories,1,29.99,0,Completed,Tara Nguyen
+ORD-1368,C1165,2025-03-26,West ,Zephyr Headphones,Electronics,1,89.99,0,Completed ,Tara Nguyen
+ORD-1418,C1190,2025-06-25,West ,Pulse Smartwatch,Electronics,2,199.0,10,Completed, Tara Nguyen 
+ORD-1113,C1142,2025-01-25,Southeast,Zephyr Headphones,Electronics,1,89.99,10,Returned,Dana Ortiz
+ORD-1008,C1011,"Jan 22, 2025",NORTHEAST,FlexBand Set,Fitness,1,$24.99,0,Completed,Priya Shah
+ORD-1295,C1198,2025-05-19,midwest,LAPTOP SLEEVE,Accessories,2,29.99,15,Completed,Sam Okafor
+ORD-1066,C1079,2025-04-22,Northeast,Trail Water Bottle,Fitness,1,19.5,5,Completed,Marcus Bell
+ORD-1059,C1089,"Apr 10, 2025",Northeast,Pulse Smartwatch,Electronics,3,199.0,0,Completed,Priya Shah
+ORD-1237,C1020,2025-01-01,Mid-West,Lumen Desk Lamp,Home,1,34.99,0,Returned,Jo Brennan
+ORD-1010,C1068,2025-01-23,Northeast,Brewmaster Coffee Maker,Home,3,79.0,15,Completed,Priya Shah
+ORD-1244,C1086,2025-02-27,Midwest,Zephyr Headphones,Electronics,2,89.99,15,COMPLETED,Jo Brennan
+ORD-1178,C1131,2025-05-19,southeast,Lumen Desk Lamp,Home,1,34.99,10,Complete,Dana Ortiz
+ORD-1092,,"May 4, 2025",Northeast,USB-C Cable 3-pack,Accessories,2,14.99,0,Completed,Marcus Bell
+ORD-1198,C1173,2025-06-22,Southeast,Brewmaster Coffee Maker,Home,2,79.0,10,Completed ,Lee Watkins
+ORD-1318,C1103,2025-01-27,West,Pulse Smartwatch,Electronics,1,199.0,0,Completed,Tara Nguyen
+ORD-1340,C1112,02/08/2025,West,Nova Webcam,Electronics,1,59.5,0,Returned,Tara Nguyen
+ORD-1035,C1025,2025-02-02,NORTHEAST,USB-C Cable 3-pack,Accessories,2,14.99,10,Completed,Priya Shah
+ORD-1211,C1113,2025-06-21,SE,PULSE SMARTWATCH,Electronics,1,$199.00,0,Completed,Dana Ortiz
+ORD-1055,C1026,"Mar 12, 2025",NE,Pulse Smartwatch,Electronics,2,199.0,5,COMPLETED,Priya Shah
+ORD-1311,C1073,2025-06-11,midwest,Trail Water Bottle,Fitness,1,19.5,0,Completed,Sam Okafor
+ORD-1132,C1104,2025-03-03,South East,Brewmaster Coffee Maker,Home,1,$79.00,0,Returned,Lee Watkins
+ORD-1149,C1097,2025-04-20,southeast,Pulse Smartwatch,Electronics,2,199.0,5,Complete,DANA ORTIZ
+ORD-1307,C1069,"Jun 30, 2025",Midwest,Pulse Smartwatch,Electronics,2,199.0,0,Completed,Sam Okafor
+ORD-1288,C1095,05/26/2025,Midwest,Zephyr Headphones,Electronics,4,89.99,10,Returned,Jo Brennan
+ORD-1209,C1126,2025-06-15,Southeast,Pulse Smartwatch,Electronics,2,199.0,10,Completed,Lee Watkins
+ORD-1319,C1035,01/16/2025,West,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Tara Nguyen
+ORD-1267,C1147,"Mar 3, 2025",Midwest,FlexBand Set,Fitness,1,24.99,0,Completed,Sam Okafor
+ORD-1339,C1008,2025-02-15,West,Pulse Smartwatch,Electronics,2,199.0,15,Completed,Tara Nguyen
+ORD-1096,C1027,2025-06-14,Northeast,USB-C Cable 3-pack,Accessories,4,14.99,15,Completed ,Marcus Bell
+ORD-1303,C1176,2025-06-23,MIDWEST,USB-C Cable 3-pack,Accessories,1,14.99,5,Completed,Jo Brennan
+ORD-1341,C1187,2025-02-19,West,Lumen Desk Lamp,Home,1,34.99,10,Completed,Chris Vega
+ORD-1222,C1189,2025-06-22,Southeast,USB-C Cable 3-pack,Accessories,3,,0,completed,Lee Watkins
+ORD-1134,C1120,2025-03-08,SE,Lumen Desk Lamp,Home,1,34.99,0,Completed,Lee Watkins
+ORD-1089,C1166,2025-05-02,NORTHEAST,Trail Water Bottle,Fitness,2,,0,Completed ,Priya Shah
+ORD-1206,C1056,"Jun 11, 2025",Southeast,USB-C Cable 3-pack,Accessories,2,14.99,0,Completed,Dana Ortiz
+ORD-1042,C1145,2025-03-08,northeast,Brewmaster Coffee Maker,Home,2,79.0,0,Cancelled,Priya Shah
+ORD-1003,C1006,2025-01-18,Northeast,PULSE SMARTWATCH,Electronics,1,199.0,15,Complete,Marcus Bell
+ORD-1242,C1162,2025-01-13,Midwest,Brewmaster Coffee Maker,Home,4,79.0,0,Completed,Sam Okafor
+ORD-1381,,"Mar 20, 2025",West,Zephyr Headphones,Electronics,2,89.99,5,completed,Tara Nguyen
+ORD-1377,C1063,2025-03-23,West,Zephyr Headphones,Electronics,1,89.99,0,Completed,Tara Nguyen
+ORD-1408,C1093,05/11/2025,West,USB-C Cable 3-pack,Accessories,1,14.99,0,Completed,Chris Vega
+ORD-1314,C1074,2025-01-29,West,Laptop Sleeve,Accessories,,29.99,0,Cancelled, Tara Nguyen 
+ORD-1221,C1021,2025-06-10,southeast,Zephyr Headphones,Electronics,2,89.99,15,Completed,Lee Watkins
+ORD-1117,C1120,"Jan 10, 2025",South East,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Lee Watkins
+ORD-1030,C1171,2025-02-16,Northeast,Zephyr Headphones,Electronics,1,89.99,0,Returned,Marcus Bell
+ORD-1212,C1118,"Jun 15, 2025",southeast,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Lee Watkins
+ORD-1255,,2025-02-22,Midwest,Laptop Sleeve,Accessories,2,29.99,0,Completed, Sam Okafor 
+ORD-1063,C1155,"Apr 17, 2025",Northeast,Trail Water Bottle,Fitness,1,$19.50,10,COMPLETED,Priya Shah
+ORD-1015,C1191,2025-01-19,Northeast,USB-C Cable 3-pack,Accessories,1,14.99,10,Completed,Marcus Bell
+ORD-1352,C1101,02/08/2025,West,Trail Water Bottle,Fitness,2,19.5,0,Completed,Chris Vega
+ORD-1256,C1093,2025-02-12,Midwest,Zephyr Headphones,Electronics,1,$89.99,10,Completed,Sam Okafor
+ORD-1016,C1035,2025-01-17,NE,Brewmaster Coffee Maker,Home,1,$79.00,0,cancelled,Priya Shah
+ORD-1171,C1031,2025-05-31,Southeast,Zephyr Headphones,Electronics,3,89.99,5,Returned,Dana Ortiz
+ORD-1419,C1139,06/27/2025,west,FlexBand Set,Fitness,,24.99,10,Completed,Tara Nguyen
+ORD-1248,C1167,2025-02-11,Midwest,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Jo Brennan
+ORD-1076,C1156,2025-05-27,NE,Laptop Sleeve,Accessories,2,,10,Complete,Marcus Bell
+ORD-1262,C1081,"Mar 22, 2025",Midwest,USB-C Cable 3-pack,Accessories,1,14.99,0,Cancelled,Jo Brennan
+ORD-1084,C1124,2025-05-01,Northeast,Lumen Desk Lamp,Home,1,34.99,15,completed,Marcus Bell
+ORD-1414,C1035,2025-06-06,West,FlexBand Set,Fitness,1,24.99,5,Completed,Tara Nguyen
+ORD-1167,C1034,2025-04-13,SOUTHEAST,Zephyr Headphones,Electronics,1,89.99,15,completed,Lee Watkins
+ORD-1223,C1079,2025-06-06,SOUTHEAST,LUMEN DESK LAMP,Home,4,$34.99,0,Returned,Lee Watkins
+ORD-1327,C1083,"Jan 28, 2025",West,FlexBand Set,Fitness,1,24.99,0,Completed,Tara Nguyen
+ORD-1021,C1160,2025-02-10,NORTHEAST,Lumen Desk Lamp,Home,3,34.99,10,completed,Priya Shah
+ORD-1080,C1177,2025-05-05,northeast,Zephyr Headphones,Electronics,2,,0,Returned, Marcus Bell 
+ORD-1172,C1152,2025-05-01,South East,Trail Water Bottle,Fitness,1,19.5,0,Completed,Dana Ortiz
+ORD-1399,C1197,2025-04-22,west,Lumen Desk Lamp,Home,2,34.99,10,Completed,Tara Nguyen
+ORD-1354,C1120,"Feb 25, 2025",West,Zephyr Headphones,Electronics,3,89.99,0,Cancelled,Chris Vega
+ORD-1158,C1023,04/30/2025,Southeast,FlexBand Set,Fitness,1,$24.99,15,Completed,Lee Watkins
+ORD-1170,C1175,2025-05-12,SE,USB-C Cable 3-pack,Accessories,1,14.99,15,Completed ,Lee Watkins
+ORD-1332,C1034,2025-01-25,West,Nova Webcam,Electronics,2,59.5,15,COMPLETED,Chris Vega
+ORD-1205,C1111,2025-06-19,SOUTHEAST,Lumen Desk Lamp,Home,999,34.99,0,Completed ,Lee Watkins
+ORD-1238,C1077,2025-01-04,Midwest,Zephyr Headphones,Electronics,1,$89.99,5,Returned,Jo Brennan
+ORD-1103,C1004,06/03/2025,Northeast,Trail Water Bottle,Fitness,1,19.5,5,Completed, Priya Shah 
+ORD-1334,C1138,2025-01-05,West,Zephyr Headphones,Electronics,2,89.99,0,Cancelled,Tara Nguyen
+ORD-1107,C1194,06/17/2025,NE,Nova Webcam,Electronics,,59.5,0,Completed,Priya Shah
+ORD-1304,C1184,06/09/2025,midwest,FlexBand Set,Fitness,1,$24.99,10,Completed, Jo Brennan 
+ORD-1272,C1164,04/06/2025,Mid-West,FlexBand Set,Fitness,2,$24.99,10,Completed,Sam Okafor
+ORD-1287,C1129,2025-05-15,MIDWEST,FlexBand Set,Fitness,2,$24.99,0,Completed,Sam Okafor
+ORD-1130,C1052,"Feb 9, 2025",South East,Trail Water Bottle,Fitness,1,,0,Completed,Lee Watkins
+ORD-1102,C1125,06/18/2025,Northeast,Zephyr Headphones,Electronics,2,89.99,15,Completed,Marcus Bell
+ORD-1016,C1035,2025-01-17,NE,Brewmaster Coffee Maker,Home,1,$79.00,0,cancelled,Priya Shah
+ORD-1011,C1186,2025-01-08,Northeast,FlexBand Set,Fitness,1,24.99,5,Completed,Marcus Bell
+ORD-1056,C1041,04/26/2025,northeast,Laptop Sleeve,Accessories,3,29.99,5,Completed,Priya Shah
+ORD-1280,C1024,2025-04-02,MW,Nova Webcam,Electronics,1,59.5,5,Completed,Jo Brennan
+ORD-1358,C1090,02/06/2025,WEST,Lumen Desk Lamp,Home,1,34.99,10,Completed,Chris Vega
+ORD-1018,,2025-01-18,Northeast,FlexBand Set,Fitness,3,,0,Completed,Priya Shah
+ORD-1387,C1166,2025-04-20,West,Lumen Desk Lamp,Home,1,$34.99,0,completed,Tara Nguyen
+ORD-1351,C1030,2025-02-24,West,Laptop Sleeve,Accessories,4,29.99,5,Cancelled,Tara Nguyen
+ORD-1243,C1061,2025-02-24,Mid-West,Brewmaster Coffee Maker,Home,2,79.0,0,Completed,Jo Brennan
+ORD-1121,C1179,2025-02-13,Southeast,Zephyr Headphones,Electronics,4,89.99,10,Complete,Lee Watkins
+ORD-1415,C1124,"Jun 5, 2025",West,USB-C Cable 3-pack,Accessories,1,14.99,5,Cancelled,Chris Vega
+ORD-1175,,2025-05-18,southeast,Nova Webcam,Electronics,1,59.5,0,Cancelled,Dana Ortiz
+ORD-1140,C1180,2025-03-30,Southeast,Zephyr Headphones,Electronics,3,89.99,5,Completed,Dana Ortiz
+ORD-1094,C1175,2025-06-20,Northeast,Zephyr Headphones,Electronics,3,$89.99,10,Completed,Priya Shah
+ORD-1410,C1117,2025-05-20,West,FlexBand Set,Fitness,1,24.99,15,Completed,Chris Vega
+ORD-1330,C1190,2025-01-07,West,Brewmaster Coffee Maker,Home,2,79.0,0,Completed,Chris Vega
+ORD-1100,C1083,2025-06-06,Northeast,Brewmaster Coffee Maker,Home,1,79.0,0,Completed ,Marcus Bell
+ORD-1034,C1118,2025-02-08,Northeast,Pulse Smartwatch,Electronics,3,199.0,0,Completed,Marcus Bell
+ORD-1308,C1061,06/08/2025,Midwest,Zephyr Headphones,Electronics,1,89.99,10,Completed,Sam Okafor
+ORD-1093,C1019,06/19/2025,North East,BREWMASTER COFFEE MAKER,Home,2,79.0,15,Completed ,Priya Shah
+ORD-1004,C1001,2025-01-25,Northeast,Pulse Smartwatch,Electronics,3,199.0,15,Completed,Marcus Bell
+ORD-1136,C1087,2025-03-30,Southeast,USB-C Cable 3-pack,Accessories,2,14.99,0,completed,Dana Ortiz
+ORD-1019,C1068,2025-02-25,Northeast,Trail Water Bottle,Fitness,2,19.5,0,Completed,Marcus Bell
+ORD-1222,C1189,2025-06-22,Southeast,USB-C Cable 3-pack,Accessories,3,,0,completed,Lee Watkins
+ORD-1420,C1055,06/14/2025,West,USB-C Cable 3-pack,Accessories,1,14.99,15,completed,Tara Nguyen
+ORD-1164,C1027,2025-04-22,southeast,USB-C Cable 3-pack,Accessories,1,14.99,0,Cancelled,Lee Watkins
+ORD-1371,C1004,03/31/2025,West,Pulse Smartwatch,Electronics,1,199.0,0,completed,Chris Vega
+ORD-1258,C1166,"Mar 9, 2025",Midwest,FlexBand Set,Fitness,1,24.99,0,Completed,Sam Okafor
+ORD-1029,C1015,2025-02-08,NORTHEAST,Zephyr Headphones,Electronics,1,89.99,0,Completed ,Marcus Bell
+ORD-1247,C1064,02/02/2025,Midwest,Laptop Sleeve,Accessories,2,29.99,0,Completed,Jo Brennan
+ORD-1367,C1141,"Mar 16, 2025",WEST,Zephyr Headphones,Electronics,1,89.99,0,Completed, Tara Nguyen 
+ORD-1282,C1131,2025-04-15,MIDWEST,Pulse Smartwatch,Electronics,1,199.0,0,COMPLETED,Jo Brennan
+ORD-1337,C1088,01/05/2025,West,USB-C Cable 3-pack,Accessories,1,14.99,15,Completed , Tara Nguyen 
+ORD-1201,C1180,2025-06-08,Southeast,Pulse Smartwatch,Electronics,1,199.0,15,Completed,Lee Watkins
+ORD-1014,C1164,01/15/2025,Northeast,Pulse Smartwatch,Electronics,1,199.0,0,Completed, Priya Shah 
+ORD-1239,C1127,2025-01-20,Midwest,Zephyr Headphones,Electronics,1,,15,completed,Sam Okafor
+ORD-1076,C1156,2025-05-27,NE,Laptop Sleeve,Accessories,2,,10,Complete,Marcus Bell
+ORD-1101,C1179,2025-06-29,NE,Brewmaster Coffee Maker,Home,-3,,0,Completed,Priya Shah
+ORD-1192,C1177,2025-05-09,Southeast,FlexBand Set,Fitness,1,24.99,0,Completed,Lee Watkins
+ORD-1384,C1076,2025-03-16,West,Pulse Smartwatch,Electronics,2,199.0,0,Completed, Chris Vega 
+ORD-1131,C1007,"Feb 21, 2025",Southeast,Laptop Sleeve,Accessories,2,29.99,0,Completed,Dana Ortiz
+ORD-1356,C1058,2025-02-13,West,Nova Webcam,Electronics,2,$59.50,0,Completed,Chris Vega
+ORD-1133,C1039,03/16/2025,Southeast,Laptop Sleeve,Accessories,3,$29.99,0,Complete,Lee Watkins
+ORD-1393,C1183,2025-04-14,west,Nova Webcam,Electronics,2,59.5,0,Completed,Chris Vega
+ORD-1259,C1099,2025-03-30,MIDWEST,Trail Water Bottle,Fitness,,19.5,0,Complete,Jo Brennan
+ORD-1169,C1176,05/12/2025,Southeast,Laptop Sleeve,Accessories,1,29.99,5,Complete, Dana Ortiz 
+ORD-1328,,"Jan 15, 2025",west,Trail Water Bottle,Fitness,3,19.5,5,Complete,Tara Nguyen
+ORD-1218,C1016,2025-06-11,Southeast,USB-C Cable 3-pack,Accessories,1,14.99,15,COMPLETED,Lee Watkins
+ORD-1007,C1141,2025-01-10,NE,Laptop Sleeve,Accessories,,29.99,10,Completed,Marcus Bell
+ORD-1177,C1032,"May 24, 2025",Southeast,Zephyr Headphones,Electronics,1,89.99,0,Return,Dana Ortiz
+ORD-1200,C1074,2025-06-11,South East,USB-C Cable 3-pack,Accessories,1,14.99,5,Completed,Lee Watkins
+ORD-1363,C1128,02/27/2025,West,FlexBand Set,Fitness,2,24.99,5,Completed ,Tara Nguyen
+ORD-1156,C1064,2025-04-22,Southeast,Pulse Smartwatch,Electronics,2,199.0,15,Completed,Dana Ortiz
+ORD-1305,C1088,06/25/2025,Midwest,Laptop Sleeve,Accessories,3,29.99,0,Completed,Sam Okafor
+ORD-1342,C1169,2025-02-17,West,Nova Webcam,Electronics,1,$59.50,0,completed,Chris Vega
+ORD-1270,C1181,2025-03-08,Midwest,Nova Webcam,Electronics,1,,10,Complete,Jo Brennan
+ORD-1376,C1096,2025-03-14,west,Pulse Smartwatch,Electronics,1,199.0,10,Completed,Chris Vega
+ORD-1241,C1134,01/12/2025,midwest,Pulse Smartwatch,Electronics,1,199.0,10,Complete,Sam Okafor
+ORD-1022,C1138,2025-02-25,NE,Pulse Smartwatch,Electronics,3,199.0,0,Completed,Marcus Bell
+ORD-1331,C1015,01/30/2025,West,Brewmaster Coffee Maker,Home,3,79.0,5,Completed,Tara Nguyen
+ORD-1269,C1128,03/30/2025,Midwest,USB-C Cable 3-pack,Accessories,3,14.99,0,Completed,Sam Okafor
+ORD-1317,C1003,01/24/2025,W,Trail Water Bottle,Fitness,1,19.5,0,Completed,Tara Nguyen
+ORD-1252,C1114,2025-02-20,MIDWEST,Brewmaster Coffee Maker,Home,2,79.0,0,Completed,Jo Brennan
+ORD-1299,C1015,2025-06-23,Midwest,USB-C Cable 3-pack,Accessories,1,$14.99,0,Complete,Jo Brennan
+ORD-1400,C1026,04/10/2025,W,Brewmaster Coffee Maker,Home,1,$79.00,0,Returned,Tara Nguyen
+ORD-1260,C1156,2025-03-10,Midwest,Trail Water Bottle,Fitness,2,19.5,5,completed,Sam Okafor
+ORD-1090,C1061,2025-05-05,Northeast,USB-C Cable 3-pack,Accessories,1,14.99,0,Completed,Priya Shah
+ORD-1099,C1192,2025-06-15,NORTHEAST,Nova Webcam,Electronics,2,$59.50,15,Completed,Marcus Bell
+ORD-1187,,2025-05-31,SE,USB-C Cable 3-pack,Accessories,2,14.99,0,Completed,Dana Ortiz
+ORD-1151,,04/12/2025,Southeast,Trail Water Bottle,Fitness,4,,0,completed,Lee Watkins
+ORD-1032,C1186,02/02/2025,Northeast,Brewmaster Coffee Maker,Home,2,79.0,15,Complete,Priya Shah
+ORD-1357,,2025-02-09,West,FlexBand Set,Fitness,2,24.99,5,Cancelled,Chris Vega
+ORD-1265,C1094,"Mar 15, 2025",Midwest,Zephyr Headphones,Electronics,3,89.99,10,Completed,Sam Okafor
+ORD-1026,C1193,2025-02-24,northeast,Laptop Sleeve,Accessories,2,29.99,15,Completed,Marcus Bell
+ORD-1230,C1154,2025-01-05,Midwest,Laptop Sleeve,Accessories,3,29.99,0,Completed,Jo Brennan
+ORD-1158,C1023,04/30/2025,Southeast,FlexBand Set,Fitness,1,$24.99,15,Completed,Lee Watkins
+ORD-1023,C1092,"Feb 27, 2025",northeast,Lumen Desk Lamp,Home,3,34.99,0,Completed,Priya Shah
+ORD-1375,C1162,2025-03-09,west,Laptop Sleeve,Accessories,2,29.99,5,Completed,Chris Vega
+ORD-1227,C1184,2025-06-08,South East,Zephyr Headphones,Electronics,,89.99,10,Completed,Lee Watkins
+ORD-1409,C1163,2025-05-11,WEST,Trail Water Bottle,Fitness,2,$19.50,10,Completed,Chris Vega
+ORD-1078,,05/25/2025,North East,USB-C Cable 3-pack,Accessories,2,14.99,5,Completed,Priya Shah
+ORD-1395,C1092,2025-04-23,West,FlexBand Set,Fitness,3,24.99,10,Completed, Tara Nguyen 
+ORD-1394,C1102,2025-04-18,West,Laptop Sleeve,Accessories,1,$29.99,15,Completed,Chris Vega
+ORD-1315,C1116,2025-01-21,West,Laptop Sleeve,Accessories,1,29.99,5,Complete,Tara Nguyen
+ORD-1301,C1184,"Jun 22, 2025",Midwest,FlexBand Set,Fitness,2,24.99,15,Completed,Jo Brennan
+ORD-1284,,2025-04-29,Midwest,Zephyr Headphones,Electronics,3,89.99,15,RETURNED,Jo Brennan
+ORD-1036,C1060,2025-02-06,Northeast,Laptop Sleeve,Accessories,1,,5,Completed,Priya Shah
+ORD-1074,C1027,2025-05-25,Northeast,Laptop Sleeve,Accessories,1,29.99,0,Completed ,Marcus Bell
+ORD-1069,C1054,2025-04-17,Northeast,Lumen Desk Lamp,Home,1,34.99,15,Completed, Priya Shah 
+ORD-1196,C1193,06/20/2025,SOUTHEAST,Laptop Sleeve,Accessories,1,29.99,0,Completed,Lee Watkins
+ORD-1071,C1050,04/05/2025,Northeast,Trail Water Bottle,Fitness,,19.5,0,completed,Marcus Bell
+ORD-1154,C1070,2025-04-01,southeast,Laptop Sleeve,Accessories,2,29.99,15,Completed,Dana Ortiz
+ORD-1349,C1154,2025-02-02,West,Nova Webcam,Electronics,3,59.5,0,Completed,Tara Nguyen
+ORD-1161,C1193,2025-04-08,Southeast,Lumen Desk Lamp,Home,3,34.99,15,Completed,Lee Watkins
+ORD-1338,C1157,01/25/2025,W,Zephyr Headphones,Electronics,3,$89.99,0,Completed, Tara Nguyen 
+ORD-1053,C1176,03/29/2025,Northeast,FlexBand Set,Fitness,1,24.99,0,Completed,Marcus Bell
+ORD-1046,C1017,2025-03-29,Northeast,Zephyr Headphones,Electronics,1,89.99,0,RETURNED,Priya Shah
+ORD-1197,C1155,2025-06-15,Southeast,Lumen Desk Lamp,Home,1,,0,Completed,Dana Ortiz
+ORD-1118,C1175,01/08/2025,Southeast,Trail Water Bottle,Fitness,3,19.5,15,Completed,Dana Ortiz
+ORD-1037,C1042,2025-02-13,NORTHEAST,USB-C Cable 3-pack,Accessories,1,14.99,5,Completed,Marcus Bell
+ORD-1291,C1041,05/13/2025,Midwest,Brewmaster Coffee Maker,Home,4,79.0,15,Completed,Jo Brennan
+ORD-1289,C1130,2025-05-13,MW,USB-C Cable 3-pack,Accessories,1,14.99,0,Completed,Sam Okafor
+ORD-1217,,2025-06-14,southeast,Brewmaster Coffee Maker,Home,2,79.0,15,Completed,Dana Ortiz
+ORD-1062,C1067,2025-04-02,NORTHEAST,Pulse Smartwatch,Electronics,1,199.0,5,Cancelled,Marcus Bell
+ORD-1323,C1034,"Jan 16, 2025",West,Brewmaster Coffee Maker,Home,1,79.0,15,Completed,Chris Vega
+ORD-1285,C1027,05/14/2025,Midwest,Nova Webcam,Electronics,1,$59.50,0,Returned,Jo Brennan
+ORD-1005,C1195,2025-01-11,NORTHEAST,Brewmaster Coffee Maker,Home,1,79.0,5,COMPLETED,Priya Shah
+ORD-1228,C1059,2025-06-18,Southeast,USB-C Cable 3-pack,Accessories,1,14.99,5,Completed,Dana Ortiz
+ORD-1266,C1079,2025-03-13,Midwest,FlexBand Set,Fitness,4,24.99,15,Complete,Jo Brennan
+ORD-1116,C1061,"Jan 6, 2025",Southeast,Nova Webcam,Electronics,2,59.5,0,Completed,Dana Ortiz
+ORD-1342,C1169,2025-02-17,west,Nova Webcam,Electronics,1,$59.50,0,completed,CHRIS VEGA
+ORD-1155,C1073,2025-04-25,Southeast,Laptop Sleeve,Accessories,2,29.99,10,Completed,Lee Watkins
+ORD-1310,C1040,2025-06-14,MW,Zephyr Headphones,Electronics,2,89.99,5,Completed,Jo Brennan
+ORD-1040,C1128,2025-03-30,Northeast,Zephyr Headphones,Electronics,3,89.99,0,Completed,Priya Shah
+ORD-1245,C1046,02/26/2025,Midwest,Laptop Sleeve,Accessories,1,29.99,15,Completed,Jo Brennan
+ORD-1176,C1003,2025-05-12,South East,Trail Water Bottle,Fitness,2,19.5,0,Return,Lee Watkins
+ORD-1110,C1072,2025-06-16,Northeast,ZEPHYR HEADPHONES,Electronics,1,$89.99,0,Returned,Priya Shah
+ORD-1404,C1132,2025-05-06,West,Laptop Sleeve,Accessories,2,29.99,0,Completed,Chris Vega
+ORD-1380,C1142,03/18/2025,West,Zephyr Headphones,Electronics,1,89.99,0,Completed,Tara Nguyen
+ORD-1047,,2025-03-20,Northeast,Lumen Desk Lamp,Home,4,34.99,15,Completed,Priya Shah
+ORD-1312,,2025-06-24,Midwest,Trail Water Bottle,Fitness,3,19.5,0,Completed ,Sam Okafor
+ORD-1120,C1152,2025-02-24,SE,Zephyr Headphones,Electronics,3,89.99,0,completed,Lee Watkins
+ORD-1157,C1165,2025-04-02,southeast,Trail Water Bottle,Fitness,1,19.5,5,Completed,Dana Ortiz
+ORD-1203,C1181,06/21/2025,Southeast,FlexBand Set,Fitness,1,24.99,0,Completed ,Lee Watkins
+ORD-1027,C1095,2025-02-15,North East,Brewmaster Coffee Maker,Home,3,79.0,5,Completed,Priya Shah
+ORD-1401,C1089,2025-04-10,W,USB-C Cable 3-pack,Accessories,1,14.99,0,Complete,Chris Vega
+ORD-1191,C1109,2025-05-28,SE,USB-C Cable 3-pack,Accessories,2,14.99,10,Completed,Dana Ortiz
+ORD-1043,C1133,2025-03-11,northeast,Lumen Desk Lamp,Home,3,34.99,0,Completed,Marcus Bell
+ORD-1129,C1105,2025-02-02,Southeast,Trail Water Bottle,Fitness,1,$19.50,0,Completed,Lee Watkins
+ORD-1185,C1080,2025-05-22,Southeast,Trail Water Bottle,Fitness,1,$19.50,0,Completed,Lee Watkins
+ORD-1343,C1188,2025-02-06,West,Zephyr Headphones,Electronics,2,89.99,5,Canceled,Chris Vega
+ORD-1141,C1128,2025-03-31,South East,Lumen Desk Lamp,Home,2,34.99,0,Returned,Lee Watkins
+ORD-1082,C1178,"May 1, 2025",Northeast,Laptop Sleeve,Accessories,3,29.99,10,completed,Marcus Bell
+ORD-1155,C1073,2025-04-25,Southeast,Laptop Sleeve,Accessories,2,29.99,10,Completed,Lee Watkins
+ORD-1372,C1144,2025-03-08,West,Laptop Sleeve,Accessories,2,29.99,5,Completed, Chris Vega 
+ORD-1104,C1121,2025-06-18,NE,Nova Webcam,Electronics,1,59.5,5,Completed,Marcus Bell
+ORD-1335,C1135,2025-01-05,W,Pulse Smartwatch,Electronics,2,199.0,0,Completed, Tara Nguyen 
+ORD-1001,C1070,2025-01-08,Northeast,Trail Water Bottle,Fitness,1,,15,Returned,Priya Shah
+ORD-1234,C1060,2025-01-13,Midwest,Zephyr Headphones,Electronics,4,89.99,0,Completed,Sam Okafor
+ORD-1226,C1159,2025-06-26,SOUTHEAST,Pulse Smartwatch,Electronics,3,199.0,15,Complete,Lee Watkins
+ORD-1081,,2025-05-02,Northeast,Brewmaster Coffee Maker,Home,1,79.0,5,Completed,Marcus Bell
+ORD-1064,C1000,2025-04-17,Northeast,NOVA WEBCAM,Electronics,3,59.5,10,Completed,Priya Shah
+ORD-1091,C1094,2025-05-06,Northeast,Lumen Desk Lamp,Home,2,34.99,15,Completed, Priya Shah 
+ORD-1009,C1097,2025-01-09,Northeast,USB-C Cable 3-pack,Accessories,1,14.99,0,Completed,Priya Shah
+ORD-1236,C1120,2025-01-23,Midwest,Zephyr Headphones,Electronics,3,$89.99,15,Completed,Jo Brennan
+ORD-1306,C1088,"Jun 30, 2025",Midwest,Nova Webcam,Electronics,,59.5,0,Completed,Jo Brennan
+ORD-1051,C1023,2025-03-21,Northeast,Laptop Sleeve,Accessories,1,29.99,0,completed, Priya Shah 
+ORD-1024,C1020,02/03/2025,Northeast,Nova Webcam,Electronics,2,59.5,0,Completed ,Priya Shah
+ORD-1025,C1140,"Feb 6, 2025",Northeast,ZEPHYR HEADPHONES,Electronics,1,89.99,10,Completed ,Marcus Bell
+ORD-1176,C1003,2025-05-12,South East,Trail Water Bottle,Fitness,2,19.5,0,Return,Lee Watkins
+ORD-1249,C1098,2025-02-11,Midwest,LAPTOP SLEEVE,Accessories,4,29.99,5,Completed, Jo Brennan 
+ORD-1290,C1121,"May 17, 2025",Midwest,Zephyr Headphones,Electronics,1,89.99,10,Returned,Sam Okafor
+ORD-1067,,2025-04-13,NE,FlexBand Set,Fitness,2,24.99,0,Completed,Marcus Bell
+ORD-1362,C1136,"Feb 18, 2025",West,Trail Water Bottle,Fitness,,19.5,0,Returned,Chris Vega
+ORD-1281,C1040,2025-04-27,MIDWEST,Nova Webcam,Electronics,1,59.5,10,Completed, Jo Brennan 
+ORD-1098,C1151,2025-06-09,North East,Lumen Desk Lamp,Home,1,34.99,0,COMPLETED,Priya Shah
+ORD-1173,C1052,2025-05-03,Southeast,Laptop Sleeve,Accessories,3,29.99,10,Completed, Dana Ortiz 
+ORD-1146,C1025,2025-03-25,SOUTHEAST,USB-C Cable 3-pack,Accessories,2,14.99,0,Completed,Lee Watkins
+ORD-1388,C1101,04/11/2025,West,Lumen Desk Lamp,Home,1,34.99,15,completed,Chris Vega
+ORD-1356,C1058,2025-02-13,west,Nova Webcam,Electronics,2,$59.50,0,Completed,CHRIS VEGA
+ORD-1373,C1176,2025-03-24,West,Brewmaster Coffee Maker,Home,1,79.0,15,Completed,Chris Vega
+ORD-1254,C1093,2025-02-17,MW,Zephyr Headphones,Electronics,3,89.99,15,Completed ,Sam Okafor
+ORD-1109,C1074,"Jun 23, 2025",northeast,Zephyr Headphones,Electronics,4,89.99,15,Returned,Marcus Bell
+ORD-1007,C1141,2025-01-10,NE,Laptop Sleeve,Accessories,,29.99,10,Completed,Marcus Bell
+ORD-1402,C1184,2025-05-23,west,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Chris Vega
+ORD-1112,C1013,2025-01-05,Southeast,Zephyr Headphones,Electronics,1,89.99,10,Completed,Lee Watkins
+ORD-1204,C1158,06/15/2025,South East,Zephyr Headphones,Electronics,3,89.99,0,Returned,Dana Ortiz
+ORD-1274,C1011,2025-04-21,MW,USB-C Cable 3-pack,Accessories,2,14.99,0,Returned,Sam Okafor
+ORD-1033,C1027,2025-02-08,Northeast,Zephyr Headphones,Electronics,1,$89.99,10,Completed,Marcus Bell
+ORD-1184,C1105,05/11/2025,SE,Lumen Desk Lamp,Home,3,34.99,5,Completed,Lee Watkins
+ORD-1326,,2025-01-04,W,FlexBand Set,Fitness,1,24.99,10,COMPLETED,Tara Nguyen
+ORD-1235,C1182,01/21/2025,Mid-West,Zephyr Headphones,Electronics,1,89.99,0,Completed,Sam Okafor
+ORD-1407,C1192,2025-05-23,West,Trail Water Bottle,Fitness,3,$19.50,0,Completed,Tara Nguyen
+ORD-1002,C1022,2025-01-19,Northeast,Trail Water Bottle,Fitness,1,19.5,0,completed,Priya Shah
+ORD-1298,C1105,2025-05-23,MW,Lumen Desk Lamp,Home,1,34.99,10,Completed,Jo Brennan
+ORD-1168,C1106,2025-04-21,Southeast,FlexBand Set,Fitness,1,24.99,5,Completed,Lee Watkins
+ORD-1250,C1068,02/26/2025,MIDWEST,Brewmaster Coffee Maker,Home,1,79.0,5,Completed,Sam Okafor
+ORD-1233,C1115,01/29/2025,Midwest,Laptop Sleeve,Accessories,1,$29.99,0,Complete,Jo Brennan
+ORD-1189,C1090,2025-05-04,southeast,Laptop Sleeve,Accessories,2,29.99,0,Completed,Dana Ortiz
+ORD-1143,C1067,2025-03-11,South East,Zephyr Headphones,Electronics,,89.99,5,Completed, Dana Ortiz 
+ORD-1382,C1021,03/24/2025,WEST,Nova Webcam,Electronics,3,59.5,0,Completed,Tara Nguyen
+ORD-1305,C1088,06/25/2025,Midwest,Laptop Sleeve,Accessories,3,29.99,0,Completed,Sam Okafor
+ORD-1207,C1198,06/12/2025,South East,FlexBand Set,Fitness,1,24.99,15,Completed,Dana Ortiz
+ORD-1048,C1169,2025-03-04,Northeast,Trail Water Bottle,Fitness,3,19.5,0,COMPLETED,Marcus Bell
+ORD-1325,C1152,"Jan 28, 2025",West,USB-C Cable 3-pack,Accessories,2,14.99,10,Completed, Chris Vega 
+ORD-1039,C1014,2025-03-19,northeast,Pulse Smartwatch,Electronics,2,199.0,0,Completed,Marcus Bell
+ORD-1232,C1115,2025-01-29,Midwest,ZEPHYR HEADPHONES,Electronics,1,89.99,5,Returned,Sam Okafor
+ORD-1193,C1046,05/28/2025,Southeast,Laptop Sleeve,Accessories,1,29.99,15,COMPLETED,Lee Watkins
+ORD-1213,C1023,2025-06-20,Southeast,Zephyr Headphones,Electronics,2,89.99,5,Completed,Lee Watkins
+ORD-1322,C1180,2025-01-25,W,Pulse Smartwatch,Electronics,1,199.0,0,Completed,Chris Vega
+ORD-1138,C1085,2025-03-18,Southeast,Lumen Desk Lamp,Home,2,34.99,5,Completed,Lee Watkins
+ORD-1403,C1005,"May 28, 2025",W,Zephyr Headphones,Electronics,1,89.99,0,Completed ,Tara Nguyen
+ORD-1296,C1161,2025-05-24,Midwest,FlexBand Set,Fitness,2,24.99,5,COMPLETED,Sam Okafor
+ORD-1073,C1102,04/08/2025,NE,Trail Water Bottle,Fitness,1,19.5,15,Complete,Priya Shah
+ORD-1251,C1046,2025-02-18,Midwest,LUMEN DESK LAMP,Home,1,34.99,0,Cancelled,Sam Okafor
+ORD-1202,C1010,06/14/2025,southeast,Zephyr Headphones,Electronics,1,89.99,0,Completed,Lee Watkins
+ORD-1347,C1034,2025-02-13,WEST,LAPTOP SLEEVE,Accessories,1,29.99,0,Completed, Chris Vega 
+ORD-1127,C1102,2025-02-27,Southeast,Trail Water Bottle,Fitness,2,19.5,0,Completed,Lee Watkins
+ORD-1165,C1016,04/21/2025,Southeast,Laptop Sleeve,Accessories,500,29.99,15,Completed,Lee Watkins
+ORD-1365,C1101,2025-03-03,W,USB-C Cable 3-pack,Accessories,1,14.99,5,Completed, Chris Vega 
+ORD-1075,C1031,2025-05-15,NE,Zephyr Headphones,Electronics,1,,5,Returned,Marcus Bell
+ORD-1128,C1029,2025-02-25,SOUTHEAST,Zephyr Headphones,Electronics,1,$89.99,10,Returned,Dana Ortiz
+ORD-1068,C1077,2025-04-10,North East,Brewmaster Coffee Maker,Home,1,79.0,10,Completed,Marcus Bell
+ORD-1360,C1161,2025-02-08,West,USB-C Cable 3-pack,Accessories,1,14.99,0,Completed ,Tara Nguyen
+ORD-1065,C1170,2025-04-30,northeast,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Priya Shah
+ORD-1182,C1075,2025-05-15,Southeast,Brewmaster Coffee Maker,Home,1,79.0,5,COMPLETED,Dana Ortiz
+ORD-1336,C1118,01/22/2025,West,USB-C Cable 3-pack,Accessories,2,14.99,5,Cancelled, Chris Vega 
+ORD-1142,C1003,03/24/2025,SE,ZEPHYR HEADPHONES,Electronics,1,89.99,15,Completed,Dana Ortiz
+ORD-1396,C1170,04/12/2025,west,Zephyr Headphones,Electronics,1,89.99,10,Returned,Tara Nguyen
+ORD-1211,C1113,2025-06-21,SE,PULSE SMARTWATCH,Electronics,1,$199.00,0,Completed,Dana Ortiz
+ORD-1232,C1115,2025-01-29,Midwest,ZEPHYR HEADPHONES,Electronics,1,89.99,5,Returned,Sam Okafor
+ORD-1070,C1169,2025-04-21,Northeast,Trail Water Bottle,Fitness,2,19.5,0,Completed,Priya Shah
+ORD-1049,C1141,2025-03-05,Northeast,Zephyr Headphones,Electronics,1,89.99,10,RETURNED,Priya Shah
+ORD-1348,C1094,2025-02-03,West,Trail Water Bottle,Fitness,1,19.5,0,Completed ,Tara Nguyen
+ORD-1264,C1031,03/07/2025,Midwest,USB-C Cable 3-pack,Accessories,2,14.99,0,Completed,Jo Brennan
+ORD-1137,C1150,03/19/2025,South East,Nova Webcam,Electronics,4,59.5,5,Completed,Dana Ortiz
+ORD-1294,C1176,2025-05-21,MW,USB-C Cable 3-pack,Accessories,1,14.99,5,Completed,Jo Brennan
+ORD-1149,C1097,2025-04-20,Southeast,Pulse Smartwatch,Electronics,2,199.0,5,Complete,Dana Ortiz
+ORD-1150,C1117,"Apr 9, 2025",Southeast,Nova Webcam,Electronics,,59.5,5,Completed,Lee Watkins
+ORD-1361,C1015,2025-02-20,West,Pulse Smartwatch,Electronics,2,199.0,10,Complete,Chris Vega
+ORD-1166,C1011,2025-04-02,Southeast,Trail Water Bottle,Fitness,1,19.5,5,Completed ,Dana Ortiz
+ORD-1087,C1194,05/29/2025,Northeast,Pulse Smartwatch,Electronics,1,199.0,5,Completed,Marcus Bell
+ORD-1276,C1062,"Apr 26, 2025",Midwest,Trail Water Bottle,Fitness,3,,5,Completed,Jo Brennan
+ORD-1306,C1088,"Jun 30, 2025",Midwest,Nova Webcam,Electronics,,59.5,0,Completed,Jo Brennan
+ORD-1144,C1136,2025-03-13,Southeast,USB-C Cable 3-pack,Accessories,4,14.99,15,Completed,Lee Watkins
+ORD-1273,,2025-04-11,MIDWEST,Pulse Smartwatch,Electronics,3,199.0,10,Completed ,Sam Okafor
+ORD-1406,C1050,2025-05-15,W,Brewmaster Coffee Maker,Home,2,$79.00,5,Completed,Tara Nguyen
+ORD-1292,C1130,2025-05-18,Mid-West,FlexBand Set,Fitness,1,24.99,10,Completed,Jo Brennan
+ORD-1031,C1104,2025-02-07,northeast,Nova Webcam,Electronics,1,59.5,15,Completed,Marcus Bell
+ORD-1412,C1036,"May 17, 2025",West,Zephyr Headphones,Electronics,1,,10,Completed,Tara Nguyen
+ORD-1213,C1023,2025-06-20,southeast,Zephyr Headphones,Electronics,2,89.99,5,Completed,LEE WATKINS
+ORD-1106,C1195,06/23/2025,NE,Brewmaster Coffee Maker,Home,1,79.0,0,COMPLETED,Marcus Bell
+ORD-1072,C1116,2025-04-14,Northeast,FlexBand Set,Fitness,3,$24.99,10,Completed, Priya Shah 
+ORD-1316,C1049,2025-01-26,W,USB-C Cable 3-pack,Accessories,1,14.99,0,Complete,Chris Vega
+ORD-1085,C1032,05/20/2025,northeast,Trail Water Bottle,Fitness,1,19.5,5,Completed ,Priya Shah
+ORD-1220,C1089,2025-06-10,Southeast,Zephyr Headphones,Electronics,4,$89.99,15,Completed,Lee Watkins
+ORD-1324,C1120,2025-01-25,West,Lumen Desk Lamp,Home,1,34.99,15,Completed,Tara Nguyen
+ORD-1313,C1009,2025-01-27,W,Lumen Desk Lamp,Home,1,34.99,5,Completed,Tara Nguyen
+ORD-1364,C1038,2025-03-08,West ,Zephyr Headphones,Electronics,1,89.99,10,Returned,Chris Vega
+ORD-1153,C1147,04/10/2025,Southeast,Nova Webcam,Electronics,4,59.5,0,Completed,Dana Ortiz
+ORD-1180,C1102,2025-05-14,SE,Zephyr Headphones,Electronics,2,89.99,5,Completed ,Lee Watkins
+ORD-1353,C1078,2025-02-09,W,Lumen Desk Lamp,Home,1,34.99,5,completed,Chris Vega
+ORD-1302,C1063,"Jun 9, 2025",Midwest,FlexBand Set,Fitness,2,24.99,0,Completed,Jo Brennan
+ORD-1253,C1090,2025-02-20,Midwest,Brewmaster Coffee Maker,Home,4,79.0,0,Returned,Sam Okafor
+ORD-1378,C1039,2025-03-24,West,BREWMASTER COFFEE MAKER,Home,1,79.0,0,COMPLETED,Tara Nguyen
+ORD-1108,C1077,2025-06-01,North East,Nova Webcam,Electronics,2,59.5,0,Completed, Marcus Bell 
+ORD-1122,C1110,02/24/2025,Southeast,Lumen Desk Lamp,Home,1,34.99,0,COMPLETED,Dana Ortiz
+ORD-1398,C1056,2025-04-17,West,Zephyr Headphones,Electronics,2,,10,Returned,Tara Nguyen
+ORD-1095,C1094,2025-06-03,northeast,Brewmaster Coffee Maker,Home,1,79.0,0,Completed,Priya Shah
+ORD-1061,C1137,04/11/2025,Northeast,Trail Water Bottle,Fitness,3,19.5,0,Completed,Marcus Bell
+ORD-1225,C1158,2025-06-05,Southeast,Trail Water Bottle,Fitness,2,19.5,0,completed,Dana Ortiz
+ORD-1045,C1144,2025-03-04,Northeast,Zephyr Headphones,Electronics,1,89.99,0,Completed ,Marcus Bell
+ORD-1179,C1168,"May 17, 2025",Southeast,Laptop Sleeve,Accessories,1,29.99,15,Returned, Dana Ortiz 
+ORD-1135,C1191,03/29/2025,Southeast,Pulse Smartwatch,Electronics,1,199.0,0,Completed,Lee Watkins
+ORD-1231,C1026,2025-01-23,Midwest,USB-C Cable 3-pack,Accessories,3,14.99,0,Completed, Jo Brennan 
+ORD-1017,C1174,"Jan 14, 2025",Northeast,Pulse Smartwatch,Electronics,2,199.0,5,completed,Marcus Bell
+ORD-1153,C1147,04/10/2025,Southeast,Nova Webcam,Electronics,4,59.5,0,Completed,Dana Ortiz
